@@ -1,0 +1,1247 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>	
+
+    <meta name="viewport" content="user-scalable=no">
+	<meta name="robots" content="noindex">
+
+  <link rel="stylesheet" href="path/to/autocomplete.css">
+
+  <!-- Include JavaScript for the autocomplete library -->
+  <script src="path/to/autocomplete.js"></script>
+
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+<defs>
+<style>
+
+
+
+	
+	
+  /* Dark Mode Styles */
+  body.dark-mode,
+  body.dark-mode * {
+    color: #f2f2f2;
+  }
+
+  body.dark-mode {
+    background-color: #0F0F0E;
+  }
+
+  /* Override specific element styles for dark mode */
+  body.dark-mode table {
+    /* Override table background color */
+    background-color: #333333;
+  }
+
+  body.dark-mode th
+  body.dark-mode td {
+    /* Override table cell text color */
+    color: #f2f2f2;
+  }
+
+ body.dark-mode .metrics-table th {
+  color: #bcbcbc;
+  padding: 9px;
+}
+
+
+
+
+
+svg text.label {
+    /* Override SVG text color */
+    fill: #bcbcbc;
+  }
+
+
+
+svg text.label {
+    /* Override SVG text color */
+    fill: #bcbcbc;
+  }
+
+	
+ .button-10 {
+    position: absolute;
+    top: 722px;
+    left: 646px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40.1px;
+    height: 40.1px;
+    border-radius: 50%;
+  background-color: #e0e0de;
+  color: #333;
+  border: 0.1px solid #ccc;
+  cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+.icon2::before {
+  content: "\f118";
+  font-family: "Ionicons"; /* Replace with the appropriate font */
+font-size: 22px;
+}
+
+.icon3::before {
+  content: "\f448";
+  font-family: "Ionicons"; /* Replace with the appropriate font */
+font-size: 22px;
+}
+
+
+body.dark-mode #searchInput1 {
+    color: #000; /* Specify the desired text color for dark mode */
+background-color : #999;
+  }
+	
+ body.dark-mode	  #searchInput1::placeholder {
+    color: #fff; /* Specify the desired color for the placeholder text */
+  }
+
+ body.dark-mode	  #searchButton1 {
+    color: #fff !important; /* Specify the desired color for the placeholder text */
+background-color : #333333;
+  }
+
+
+
+
+.button-1 {
+  align-items: center;
+  background-color: #e0e0de;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 0.1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 10px;
+  left: 810px;
+  width: 50px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-1:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+.button-9 {
+  align-items: center;
+  background-color: #e0e0de;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 0.1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 10px;
+  left: 878px;
+  width: 50px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-9:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+.button-2 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 70px;
+  left: 810px;
+width: 120px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-2:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+.button-3 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 135px;
+  left: 810px;
+width: 120px;
+ 
+  touch-action: manipulation;
+}
+
+.button-3:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+.button-4 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 200px;
+  left: 810px;
+width: 120px;
+ 
+  touch-action: manipulation;
+}
+
+.button-4:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+.button-5 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 265px;
+  left: 810px;
+width: 120px; 
+ 
+  touch-action: manipulation;
+}
+
+.button-5:hover {
+   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+.button-6 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 330px;
+  left: 810px;
+width: 120px;
+ 
+  touch-action: manipulation;
+}
+
+.button-6:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+.button-7 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 395px;
+  left: 810px;
+width: 120px;
+ 
+  touch-action: manipulation;
+}
+
+.button-7:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+
+.button-71 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 460px;
+  left: 810px;
+width: 120px;
+ 
+  touch-action: manipulation;
+}
+
+.button-71:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+
+
+.button-72 {
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 525px;
+  left: 810px;
+width: 120px;
+ 
+  touch-action: manipulation;
+}
+
+.button-72:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+.button-8 {
+  align-items: center;
+  background-color: #1DA1F2;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .1s,-webkit-box-shadow .1s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  position: absolute;
+  top: 525px;
+  left: 810px;
+ width: 120px; 
+  touch-action: manipulation;
+}
+
+.button-8:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+}
+
+
+text {
+  font-family: Arial;
+}
+
+.result-color-blue {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-pink {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-orange {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-green {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+
+
+.result-color-bleu {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-rose {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+
+
+.result-color-1 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-2 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-3 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-4 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-5 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-6 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+.result-color-7 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-8 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-9 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-10 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-11 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-12 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+
+
+.result-color-13 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-14 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-15 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-16 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-17 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-18 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+.result-color-19 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-20 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-21 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-22 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-23 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-24 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+
+
+.result-color-25 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-26 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-27 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-28 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-29 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-30 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+.result-color-31 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-32 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-33 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-34 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-35 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-36 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+
+
+.result-color-37 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-38 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-39 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-40 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-41 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-42 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+.result-color-43 {
+  color: #3062FB !important;
+  stroke: #3062FB;
+  fill: #3062FB;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-44 {
+  color: #F62681 !important;
+stroke: #F62681;
+fill: #F62681;
+fill-opacity: 0.02;
+
+}
+
+.result-color-45 {
+  color: #55d149 !important;
+stroke: #55d149;
+fill: #55d149;
+fill-opacity: 0.02;
+}
+
+.result-color-46 {
+  color: #FFCF5F !important;
+stroke: #FFCF5F;
+fill: #FFCF5F;
+fill-opacity: 0.02;
+}
+
+
+.result-color-47 {
+  color: #900C3F  !important;
+  stroke: #900C3F ;
+  fill: #900C3F ;
+  fill-opacity: 0.02;
+}
+
+
+.result-color-48 {
+  color: #F09710 !important;
+stroke: #F09710;
+fill: #F09710;
+fill-opacity: 0.02;
+
+}
+
+
+
+           
+svg:nth-of-type(1) {
+  position: absolute;
+  top: 221px;
+  left: 113px;
+  width: 520px;
+  height: 520px;
+}
+
+svg:nth-of-type(2) {
+  position: absolute;
+  top: 238px;
+  left: 133px;
+
+}
+
+
+table {
+   border-collapse: collapse;
+  width: 200px;
+  font-family: Arial;
+  border-radius: 10px;
+ ;
+ 
+}
+
+
+
+
+
+
+#searchInput1 {
+  width: 406px;
+height: 30px;
+	    font-size : 16px; /* Specify the desired color for the placeholder text */
+}
+
+#searchInput1::placeholder {
+    font-size : 18px; /* Specify the desired color for the placeholder text */
+  }
+
+
+#searchButton1 {
+  width: 32px;
+color: black !important;
+height: 32px;
+cursor: pointer;
+}
+
+
+	.name {
+  font-family: Arial, sans-serif !important;
+font-size: 13px;
+position: relative;
+top: 10px;
+  color: black !important;
+cursor: pointer;
+}
+
+.dark-mode .matching-names-container {
+  background-color: grey;
+}
+
+
+     img {
+            width: 40px;
+position: absolute;
+top: 668px;
+pointer-events: none;
+z-index: 40000; 
+left: 42px;
+opacity: .8;
+        }
+
+td {
+    font-weight: bold;
+  }
+  th {
+    font-weight: normal;
+  }
+
+
+
+
+
+ .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+position: absolute;
+  top: 678px;
+  left: 600px;
+ width: 120px; 
+    }
+
+    .toggle-label {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    .toggle-checkbox {
+      width: 40px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .toggle-checkbox input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .toggle-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+    }
+
+    .toggle-slider:before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: 0.4s;
+    }
+
+    input:checked + .toggle-slider {
+      background-color: #2196F3;
+    }
+
+    input:checked + .toggle-slider:before {
+      transform: translateX(20px);
+    }
+
+	
+.icon::before {
+  content: "\f21c";
+  font-family: "Ionicons"; /* Replace with the appropriate font */
+font-size: 22px;
+}		
+
+
+.metrics-table {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.metrics-table th {
+  color: #000000;
+  padding: 6px 9px;
+font-size: 11px;
+  text-align: center;
+}
+
+.metrics-table td {
+  padding: 4px 11px;
+text-align: center;
+}
+
+
+tr:first-child th:first-child {
+  color: #5b5b5b;
+font-weight: bold;
+font-size: 12px;
+ 
+}
+
+
+</style>
+</defs>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+</head>
+
+
+  <div id="parent-container">
+<body>
+  <input type="text" id="searchInput1" class="search-bar" placeholder="Enter name of fullback..." />
+  <input type="button" id="searchButton1" value="+&nbsp;" />
+  <br />
+  <div id="resultsTable"></div>
+<div id="similarPlayersTable"></div>
+<div id="matchingNames"></div>
+ 
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<g class="radar_label">
+  <text class="label" data-type="Aerial%" data-idx="0" transform="translate(157.99 36.45) rotate(-3)">Aerial%</text>
+</g>
+
+<g class="radar_label">
+  <text class="label" data-type="Long%" data-idx="6" transform="matrix(0.5, -0.86, 0.86, 0.5, 49.89, 121.88) rotate(3.87)">Duel%</text>
+</g>
+
+<g class="radar_label">
+  <text class="label" data-type="Passes" data-idx="5" transform="matrix(-0.38, -0.93, 0.93, -0.38, 56.38, 273.78) rotate (3.87)">Def Actions</text>
+</g>
+
+<g class="radar_label">
+  <text class="label" data-type="Exits" data-idx="4" transform="translate(90.19 327.04) rotate(18.87)">Prog Passes</text>
+</g>
+
+<g class="radar_label">
+  <text class="label" data-type="Aerial" data-idx="3" transform="translate(247.56 344) rotate(-23.32)">xAssist</text>
+</g>
+
+<g class="radar_label">
+  <text class="label" data-type="Def Actions" data-idx="2" transform="translate(351.56 193.26) rotate(100.11)">Cross%</text>
+</g>
+
+<g class="radar_label">
+  <text class="label" data-type="Shotstopping" data-idx="1" transform="translate(290.42 66.68) rotate(48.09)">Carrying</text>
+</g>
+    
+  </svg>					
+
+
+<svg width="500" height="500" class="radar"><g transform="translate(231.77,225.77)"><g class="axisWrapper">
+
+
+<circle class="blackCircle" r="190" style="fill:none; stroke:#D3D3D3; stroke-width:1;"></circle>
+<circle class="gridCircle" r="190" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+<circle class="gridCircle" r="160" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+<circle class="gridCircle" r="120" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+<circle class="gridCircle" r="80" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle>
+<circle class="gridCircle" r="40" style="fill: rgb(16, 135, 188); fill-opacity: 0.03;"></circle></g>
+
+
+  
+ 
+<line x1="0" y1="0" x2="9.33" y2="189.4543362" stroke="#D3D3D3" stroke-width="1" transform="translate(-9.33, -189.4543362)"></line>
+<line x1="0" y1="0" x2="-142.0538533333333" y2="126.24" stroke="#D3D3D3" stroke-width="1" transform="translate(141.74184, -126.24)"></line>
+<line x1="0" y1="0" x2="-187.31589333333332" y2="-32.31413333333333" stroke="#D3D3D3" stroke-width="1" transform="translate(187.5574112, 32.2528)"></line>
+<line x1="0" y1="0" x2="-91.84497333333333" y2="-166.92245333333333" stroke="#D3D3D3" stroke-width="1" transform="translate(91.84497333333333, 166.21328)"></line>
+<line x1="0" y1="0" x2="72.99733333333333" y2="-175.84917333333335" stroke="#D3D3D3" stroke-width="1" transform="translate(-72.99997333333334, 175.334068)"></line>
+<line x1="0" y1="0" x2="182.73258666666666" y2="-52.67472" stroke="#D3D3D3" stroke-width="1" transform="translate(-182.7209384, 52.480128)"></line>
+<line x1="0" y1="0" x2="154.67849333333334" y2="109.91788799999999" stroke="#D3D3D3" stroke-width="1" transform="translate(-154.6883792222, -110.017215488)"></line>
+
+
+<g class="radarWrapper"></g>
+<g class="radarWrapper2"></g>
+</g>
+
+
+
+	 <img src="https://i.imgur.com/UurMbGS.png" alt="Logo">
+
+<script>
+
+
+const _0x2c50da=_0xb833;(function(_0x56b339,_0x2dc766){const _0x34208f=_0xb833,_0x5db538=_0x56b339();while(!![]){try{const _0x56979d=-parseInt(_0x34208f(0x287))/0x1*(-parseInt(_0x34208f(0x246))/0x2)+-parseInt(_0x34208f(0x2f5))/0x3+parseInt(_0x34208f(0xcf))/0x4+parseInt(_0x34208f(0x310))/0x5+parseInt(_0x34208f(0x2ef))/0x6*(parseInt(_0x34208f(0x30d))/0x7)+parseInt(_0x34208f(0x2d2))/0x8*(-parseInt(_0x34208f(0xc6))/0x9)+-parseInt(_0x34208f(0x2f8))/0xa*(parseInt(_0x34208f(0x315))/0xb);if(_0x56979d===_0x2dc766)break;else _0x5db538['push'](_0x5db538['shift']());}catch(_0xc0d577){_0x5db538['push'](_0x5db538['shift']());}}}(_0x1f5c,0x41ba4));function _0xb833(_0x1f0f5c,_0x11c5cb){const _0x1f5c95=_0x1f5c();return _0xb833=function(_0xb833e1,_0x111472){_0xb833e1=_0xb833e1-0xbc;let _0x1e3f9e=_0x1f5c95[_0xb833e1];return _0x1e3f9e;},_0xb833(_0x1f0f5c,_0x11c5cb);}const names=[_0x2c50da(0x1c6),_0x2c50da(0x1c0),'C.\x20Roberts,27,Burnley','A.\x20Bell,29,Luton\x20Town',_0x2c50da(0x295),_0x2c50da(0x16b),_0x2c50da(0x106),'L.\x20Shaw,27,Man\x20United',_0x2c50da(0x272),_0x2c50da(0x1ce),'K.\x20Trippier,32,Newcastle\x20United',_0x2c50da(0x1d6),_0x2c50da(0x219),_0x2c50da(0x132),_0x2c50da(0xca),'D.\x20Dumfries,27,Internazionale',_0x2c50da(0x27a),_0x2c50da(0x215),'T.\x20Castagne,27,Leicester\x20City',_0x2c50da(0x20d),'C.\x20Townsend,30,WBA',_0x2c50da(0x21c),_0x2c50da(0x277),_0x2c50da(0xcb),'B.\x20Nieuwkoop,27,Union\x20Saint-Gilloise',_0x2c50da(0x1dd),'R.\x20Manning,26,Swansea\x20City',_0x2c50da(0x299),_0x2c50da(0x1d3),'C.\x20Günter,30,Freiburg',_0x2c50da(0xdb),_0x2c50da(0x1e7),'A.\x20Robinson,25,Fulham',_0x2c50da(0x209),_0x2c50da(0x2c3),_0x2c50da(0x130),'D.\x20McNamara,24,Millwall',_0x2c50da(0x28b),_0x2c50da(0x2a0),_0x2c50da(0x244),'Caio\x20Henrique,25,Monaco',_0x2c50da(0x24a),_0x2c50da(0x203),_0x2c50da(0x241),'A.\x20Marušić,30,Lazio',_0x2c50da(0x1a4),_0x2c50da(0x2e5),_0x2c50da(0x18f),_0x2c50da(0x1d9),_0x2c50da(0x12a),'M.\x20Acuña,31,Sevilla',_0x2c50da(0x199),_0x2c50da(0x17c),_0x2c50da(0x24d),_0x2c50da(0x19c),'B.\x20Pavard,27,Bayern\x20München',_0x2c50da(0x27e),'N.\x20Zalewski,21,Roma',_0x2c50da(0x29b),_0x2c50da(0xf4),_0x2c50da(0x1f2),'G.\x20Arteaga,24,Genk',_0x2c50da(0x1eb),_0x2c50da(0x25f),_0x2c50da(0x273),_0x2c50da(0x126),_0x2c50da(0x10c),'M.\x20De\x20Cuyper,22,Westerlo',_0x2c50da(0x240),_0x2c50da(0x158),_0x2c50da(0x22e),'W.\x20Anton,26,Stuttgart','Raphaël\x20Guerreiro,29,Borussia\x20Dortmund',_0x2c50da(0xd7),_0x2c50da(0x1b3),_0x2c50da(0x210),'J.\x20Ryerson,25,Borussia\x20Dortmund',_0x2c50da(0x1b1),_0x2c50da(0x1e3),'V.\x20Coufal,30,West\x20Ham',_0x2c50da(0x12e),'M.\x20Wallace,30,Millwall','G.\x20Suazo,25,Toulouse','D.\x20Muñoz,27,Genk',_0x2c50da(0x23d),'K.\x20Walker,33,Man\x20City','V.\x20Le\x20Goff,33,Lorient',_0x2c50da(0x1b5),_0x2c50da(0x18c),_0x2c50da(0x21a),_0x2c50da(0x304),_0x2c50da(0x1bf),_0x2c50da(0x239),_0x2c50da(0x1f7),_0x2c50da(0x27d),_0x2c50da(0x159),_0x2c50da(0x279),_0x2c50da(0xd0),_0x2c50da(0x2dd),'I.\x20Määttä,21,Groningen',_0x2c50da(0x184),_0x2c50da(0x1dc),_0x2c50da(0x13b),_0x2c50da(0x25a),_0x2c50da(0x146),_0x2c50da(0x189),'K.\x20Sema,29,Watford',_0x2c50da(0x176),_0x2c50da(0x265),_0x2c50da(0x2be),_0x2c50da(0x116),_0x2c50da(0x253),_0x2c50da(0x23f),_0x2c50da(0x1f5),'M.\x20Köhlert,25,Heerenveen',_0x2c50da(0x217),_0x2c50da(0x231),'Nuno\x20Sequeira,32,Sporting\x20Braga',_0x2c50da(0x1f9),'R.\x20De\x20Laet,34,Antwerp',_0x2c50da(0x16e),'Y.\x20Soma,26,Casa\x20Pia\x20AC','J.\x20Auer,22,Rapid\x20Wien',_0x2c50da(0x175),_0x2c50da(0x196),'A.\x20Castro-Montes,26,Gent','C.\x20O\x27Dowda,28,Cardiff\x20City',_0x2c50da(0x11e),_0x2c50da(0x1cd),'Pablo\x20Maffeo,25,Mallorca',_0x2c50da(0xde),_0x2c50da(0xe9),'A.\x20Bah,25,Benfica',_0x2c50da(0xd3),_0x2c50da(0x2f6),'Nuno\x20Tavares,23,Olympique\x20Marseille',_0x2c50da(0x2df),_0x2c50da(0x20f),_0x2c50da(0x26f),_0x2c50da(0x1a5),_0x2c50da(0x136),_0x2c50da(0x127),_0x2c50da(0x2fa),_0x2c50da(0x22a),_0x2c50da(0x1c7),_0x2c50da(0x25c),_0x2c50da(0x276),_0x2c50da(0x229),'B.\x20Sosa,25,Stuttgart','F.\x20Parisi,22,Empoli',_0x2c50da(0x187),'Francisco\x20Moura,23,Famalicão',_0x2c50da(0x1e1),'J.\x20Maehle,26,Atalanta',_0x2c50da(0x17b),_0x2c50da(0x2b1),_0x2c50da(0x2e7),_0x2c50da(0xc0),_0x2c50da(0x2ee),'Costinha,23,Rio\x20Ave',_0x2c50da(0xf7),'I.\x20Sylla,29,Montpellier',_0x2c50da(0x157),_0x2c50da(0xf5),_0x2c50da(0x1c3),_0x2c50da(0x10b),_0x2c50da(0x263),_0x2c50da(0x1cc),'Arnau\x20Martínez,20,Girona','B.\x20Diakité,22,Lille',_0x2c50da(0x134),_0x2c50da(0x121),_0x2c50da(0x2cb),_0x2c50da(0x1a3),_0x2c50da(0x24e),_0x2c50da(0x302),_0x2c50da(0x2ea),_0x2c50da(0x135),_0x2c50da(0x24b),_0x2c50da(0x312),_0x2c50da(0x2ad),_0x2c50da(0xbe),_0x2c50da(0x140),_0x2c50da(0x208),_0x2c50da(0x1df),_0x2c50da(0x2b0),'L.\x20Blanco,24,Elche',_0x2c50da(0x2cf),_0x2c50da(0x23c),_0x2c50da(0x285),_0x2c50da(0x173),_0x2c50da(0x192),_0x2c50da(0xf0),_0x2c50da(0x25d),'Bruno\x20Langa,25,Chaves',_0x2c50da(0x2e9),_0x2c50da(0x1de),_0x2c50da(0x2b4),_0x2c50da(0xc9),_0x2c50da(0x2af),'B.\x20Schmitz,28,Köln',_0x2c50da(0x1d4),_0x2c50da(0x2ba),_0x2c50da(0x224),_0x2c50da(0x1a2),_0x2c50da(0x151),'M.\x20Sykes,25,Bristol\x20City','P.\x20Mwene,29,PSV',_0x2c50da(0x1a1),_0x2c50da(0xc8),_0x2c50da(0x200),'D.\x20Hashioka,24,Sint-Truiden','D.\x20Udogie,20,Udinese',_0x2c50da(0x2fd),_0x2c50da(0x1ae),'Reinildo\x20Mandava,29,Atlético\x20Madrid','Brian\x20Oliván,29,Espanyol',_0x2c50da(0x257),'M.\x20Wittek,27,Vitesse',_0x2c50da(0x20a),_0x2c50da(0x103),_0x2c50da(0x270),_0x2c50da(0x26e),_0x2c50da(0xce),_0x2c50da(0x2b8),_0x2c50da(0x269),'L.\x20Sernicola,25,Cremonese',_0x2c50da(0x2c0),'C.\x20Arcus,26,Vitesse','J.\x20Toljan,28,Sassuolo','Jaume\x20Costa,35,Mallorca','J.\x20Duverne,25,Brest',_0x2c50da(0x23a),_0x2c50da(0x137),'H.\x20Kamara,29,Watford',_0x2c50da(0x1b4),'L.\x20Coyle,27,Hull\x20City',_0x2c50da(0x1a6),'Y.\x20Sabaly,30,Real\x20Betis',_0x2c50da(0x204),_0x2c50da(0x2d9),'T.\x20Sakamoto,26,Oostende',_0x2c50da(0x2d1),_0x2c50da(0x147),_0x2c50da(0x26c),_0x2c50da(0x24c),_0x2c50da(0x25b),'J.\x20Ruffels,29,Huddersfield\x20Town',_0x2c50da(0x1c8),'M.\x20van\x20der\x20Maarel,33,Utrecht',_0x2c50da(0x228),'O.\x20Zinchenko,26,Arsenal',_0x2c50da(0x245),'M.\x20Bakker,22,Bayer\x20Leverkusen','Lucas\x20Soares,25,Casa\x20Pia\x20AC','Miguel\x20Gutiérrez,21,Girona','A.\x20Wan-Bissaka,25,Man\x20United','M.\x20Olivera,25,Napoli',_0x2c50da(0x201),_0x2c50da(0x16a),_0x2c50da(0x2b7),_0x2c50da(0xfc),_0x2c50da(0x289),'M.\x20Desler,28,Toulouse','Renan\x20Lodi,25,Nottingham\x20Forest','G.\x20Montiel,26,Sevilla','Vitinho,23,Burnley',_0x2c50da(0xc4),'A.\x20Truffert,21,Rennes',_0x2c50da(0x1ab),_0x2c50da(0x2fe),'P.\x20Joly,22,Dijon','B.\x20Reynolds,21,Westerlo',_0x2c50da(0x1d5),'Diego\x20Rico,30,Real\x20Sociedad','T.\x20Lutonda,22,RKC\x20Waalwijk',_0x2c50da(0x313),'Q.\x20Hartman,21,Feyenoord',_0x2c50da(0x102),_0x2c50da(0xeb),_0x2c50da(0x114),_0x2c50da(0x1fc),'J.\x20Ward,33,Crystal\x20Palace',_0x2c50da(0xee),_0x2c50da(0xd9),_0x2c50da(0x26a),_0x2c50da(0x314),'J.\x20Scally,20,Borussia\x20M\x27gladbach','Ivo\x20Pinto,33,Fortuna\x20Sittard',_0x2c50da(0x300),'S.\x20Widmer,30,Mainz\x2005',_0x2c50da(0x262),_0x2c50da(0x14b),_0x2c50da(0xfe),_0x2c50da(0x234),_0x2c50da(0x2fc),_0x2c50da(0x12b),_0x2c50da(0x1fb),_0x2c50da(0x1d0),_0x2c50da(0x30c),_0x2c50da(0x160),'D.\x20van\x20Wageningen,20,Sparta\x20Rotterdam','R.\x20Perraud,25,Southampton',_0x2c50da(0x316),_0x2c50da(0xe4),_0x2c50da(0x109),_0x2c50da(0xbc),_0x2c50da(0x1a9),'Z.\x20Çelik,26,Roma','G.\x20Tanner,23,Bristol\x20City','K.\x20D\x27Haene,32,Kortrijk',_0x2c50da(0x2e8),_0x2c50da(0x14c),_0x2c50da(0x1d8),_0x2c50da(0x2a3),_0x2c50da(0x14f),_0x2c50da(0x15f),_0x2c50da(0x128),_0x2c50da(0x1ca),_0x2c50da(0x1b0),_0x2c50da(0x260),_0x2c50da(0x107),'A.\x20Cambiaso,23,Bologna',_0x2c50da(0xe7),'D.\x20Machado,29,Lens',_0x2c50da(0x11b),_0x2c50da(0x2f9),_0x2c50da(0x13a),_0x2c50da(0x143),_0x2c50da(0x12d),'S.\x20El\x20Shaarawy,30,Roma',_0x2c50da(0x167),_0x2c50da(0x13f),'N.\x20Tjoe-A-On,21,Excelsior',_0x2c50da(0x1af),_0x2c50da(0x149),_0x2c50da(0x11f),_0x2c50da(0x2b6),_0x2c50da(0x18e),_0x2c50da(0x168),_0x2c50da(0x100),'G.\x20Cox,25,Fortuna\x20Sittard','A.\x20Danté,22,Sturm\x20Graz','R.\x20James,23,Chelsea','M.\x20Poaty,25,RFC\x20Seraing',_0x2c50da(0x2d6),_0x2c50da(0x27f),_0x2c50da(0xec),'A.\x20Caci,25,Mainz\x2005',_0x2c50da(0xe6),'D.\x20Sterling,23,Stoke\x20City','A.\x20Reca,27,Spezia','João\x20Mário,23,Porto',_0x2c50da(0x2e0),_0x2c50da(0x1c4),_0x2c50da(0x165),'A.\x20Ciranni,26,Zulte-Waregem',_0x2c50da(0xff),'Mário\x20Rui,32,Napoli','Thierry\x20Correia,24,Valencia',_0x2c50da(0x18d),_0x2c50da(0xc7),_0x2c50da(0x15e),'R.\x20Gumny,24,Augsburg',_0x2c50da(0x30f),_0x2c50da(0x250),'César\x20Azpilicueta,33,Chelsea','M.\x20Fossey,24,Standard\x20Liège',_0x2c50da(0x1fd),_0x2c50da(0xed),'Clinton\x20Mata,30,Club\x20Brugge','Q.\x20Merlin,21,Nantes',_0x2c50da(0x22c),_0x2c50da(0x1ba),'L.\x20Kelly,24,Bournemouth','N.\x20Foor,31,Cambuur',_0x2c50da(0x2fb),'C.\x20Christie,30,Hull\x20City',_0x2c50da(0x162),'T.\x20Foket,28,Reims',_0x2c50da(0xbd),'B.\x20Chilwell,26,Chelsea',_0x2c50da(0x155),_0x2c50da(0x280),_0x2c50da(0xe0),_0x2c50da(0x188),'K.\x20Nkuba,21,Charleroi','M.\x20Halstenberg,31,RB\x20Leipzig','Juan\x20Bernat,30,PSG',_0x2c50da(0x216),_0x2c50da(0x290),_0x2c50da(0xf9),_0x2c50da(0x1cf),'H.\x20Matriciani,23,Schalke\x2004',_0x2c50da(0x2da),_0x2c50da(0x20b),_0x2c50da(0x11a),_0x2c50da(0x266),_0x2c50da(0x222),_0x2c50da(0xd1),_0x2c50da(0x28d),_0x2c50da(0x169),_0x2c50da(0x1a8),_0x2c50da(0xf2),_0x2c50da(0x1bc),_0x2c50da(0xea),'T.\x20De\x20Smet,24,Reims',_0x2c50da(0x206),_0x2c50da(0x23e),_0x2c50da(0xf8),_0x2c50da(0x22f),_0x2c50da(0x28c),_0x2c50da(0x281),_0x2c50da(0x20c),'J.\x20Tymon,24,Stoke\x20City','B.\x20Johnson,23,West\x20Ham',_0x2c50da(0x190),_0x2c50da(0x112),_0x2c50da(0x14e),'R.\x20Loftus-Cheek,27,Chelsea',_0x2c50da(0x2b2),_0x2c50da(0x119),_0x2c50da(0x2d4),_0x2c50da(0x1e4),'Ayrton\x20Lucas,25,Flamengo',_0x2c50da(0xe2),_0x2c50da(0x2a1),_0x2c50da(0x161),_0x2c50da(0x191),'J.\x20Firpo,26,Leeds\x20United',_0x2c50da(0x2e2),_0x2c50da(0x16c),_0x2c50da(0x2a6),_0x2c50da(0x1d2),'S.\x20Doumbia,26,Angers\x20SCO',_0x2c50da(0xc2),'E.\x20Longelo,22,Birmingham\x20City',_0x2c50da(0x2b9),_0x2c50da(0x144),_0x2c50da(0x19d),_0x2c50da(0x2ac),_0x2c50da(0x129),_0x2c50da(0xe8),_0x2c50da(0x17d),_0x2c50da(0x2a7),_0x2c50da(0x1aa),_0x2c50da(0x164),'D.\x20Schmidt,31,Cambuur','Alfonso\x20Pedraza,27,Villarreal',_0x2c50da(0x1ed),_0x2c50da(0x124),'A.\x20Sant\x27Anna,25,Defensa\x20y\x20Justicia',_0x2c50da(0x2d0),'I.\x20Jakobs,23,Monaco',_0x2c50da(0x258),_0x2c50da(0x243),_0x2c50da(0x21f),_0x2c50da(0x1e8),_0x2c50da(0xe1),'N.\x20Guinness-Walker,23,Reading',_0x2c50da(0x15c),_0x2c50da(0x212),_0x2c50da(0x1ef),_0x2c50da(0x2ec),'A.\x20Knauff,21,Eintracht\x20Frankfurt','Aurélio\x20Buta,26,Eintracht\x20Frankfurt',_0x2c50da(0xbf),_0x2c50da(0x286),_0x2c50da(0x30a),'O.\x20\x20Wijndal,23,Ajax',_0x2c50da(0xcc),'Gilberto,30,Benfica',_0x2c50da(0x261),_0x2c50da(0x1db),_0x2c50da(0x1f0),'M.\x20Moormann,22,Rapid\x20Wien',_0x2c50da(0x2c9),_0x2c50da(0x15a),'A.\x20Baba,28,Reading',_0x2c50da(0x238),_0x2c50da(0x2e4),_0x2c50da(0x296),_0x2c50da(0x2cd),_0x2c50da(0x2eb),_0x2c50da(0x123),_0x2c50da(0x27b),'S.\x20van\x20Wermeskerken,28,Cambuur',_0x2c50da(0x301),_0x2c50da(0x182),_0x2c50da(0x172),_0x2c50da(0x249),_0x2c50da(0xc5),_0x2c50da(0x1d7),'J.\x20Van\x20Hecke,21,Mechelen','J.\x20Dirksen,20,Emmen','N.\x20Sadiki,18,Anderlecht',_0x2c50da(0x25e),'E.\x20Díaz,27,River\x20Plate','M.\x20Koscelník,28,Rapid\x20Wien','R.\x20Jurišić,21,Ried',_0x2c50da(0xda),_0x2c50da(0x218),'A.\x20Terzić,23,Fiorentina',_0x2c50da(0x1cb),_0x2c50da(0x186),'F.\x20Gmeiner,26,Austria\x20Lustenau',_0x2c50da(0x115),'Dinis\x20Pinto,22,Sporting\x20Braga',_0x2c50da(0x311),_0x2c50da(0x14a),'G.\x20Rojas,25,Racing\x20Club',_0x2c50da(0x1b7),_0x2c50da(0x2c5),_0x2c50da(0x235),_0x2c50da(0x30b),'S.\x20Birindelli,23,Monza',_0x2c50da(0x1f8),_0x2c50da(0x2f4),_0x2c50da(0x1d1),'S.\x20Iling-Junior,19,Juventus',_0x2c50da(0x20e),'Malo\x20Gusto,20,Olympique\x20Lyonnais',_0x2c50da(0x197),_0x2c50da(0x247),'Vitor\x20Jacaré,23,Bahia',_0x2c50da(0x1ad),_0x2c50da(0x274),_0x2c50da(0xdd),_0x2c50da(0x268),_0x2c50da(0x1bb),_0x2c50da(0x1b9),_0x2c50da(0x150),'Rodrigo\x20Conceição,23,Porto','D.\x20Martínez,33,Rosario\x20Central','Hugo\x20Bueno,20,Wolverhampton','N.\x20Kasanwirjo,21,Feyenoord',_0x2c50da(0x251),'N.\x20Fernández\x20Mercau,23,Elche',_0x2c50da(0x2c4),_0x2c50da(0x110),'K.\x20Lala,31,Brest','Raúl\x20Parra,23,Cádiz',_0x2c50da(0x1c2),_0x2c50da(0x139),'T.\x20Gardner-Hickman,21,WBA',_0x2c50da(0x2f1),_0x2c50da(0x1c1),_0x2c50da(0x220),_0x2c50da(0x1f1),'Samuel\x20Xavier,32,Fluminense',_0x2c50da(0x2d5),_0x2c50da(0x142),_0x2c50da(0x19b),_0x2c50da(0x1ee),_0x2c50da(0x267),_0x2c50da(0x298),_0x2c50da(0x1c9),'L.\x20Olaza,28,Real\x20Valladolid',_0x2c50da(0x308),_0x2c50da(0x225),_0x2c50da(0x111),'A.\x20Costa,23,Independiente','J.\x20Dina\x20Ebimbe,22,Eintracht\x20Frankfurt',_0x2c50da(0x1ec),'N.\x20Cozza,24,Wolfsburg',_0x2c50da(0x292),_0x2c50da(0x248),_0x2c50da(0x1f6),_0x2c50da(0x2ff),_0x2c50da(0x22b),_0x2c50da(0x14d),_0x2c50da(0x2a2),_0x2c50da(0x2c2),'Juninho\x20Capixaba,25,Red\x20Bull\x20Bragantino',_0x2c50da(0x221),'L.\x20Venuti,28,Fiorentina',_0x2c50da(0x1da),_0x2c50da(0x21b),_0x2c50da(0x198),'L.\x20Burnet,32,Emmen',_0x2c50da(0x255),'I.\x20Kaboré,22,Olympique\x20Marseille',_0x2c50da(0xdc),_0x2c50da(0x1b8),_0x2c50da(0x15d),_0x2c50da(0x318),_0x2c50da(0xc1),_0x2c50da(0xf6),_0x2c50da(0x205),_0x2c50da(0x15b),_0x2c50da(0x2de),_0x2c50da(0x2a8),_0x2c50da(0x29d),_0x2c50da(0x131),'José\x20Fontán,23,Go\x20Ahead\x20Eagles',_0x2c50da(0x2bb),_0x2c50da(0xe5),'B.\x20Osborn,28,Sheffield\x20United',_0x2c50da(0x104),'J.\x20Mosquera,23,Newell\x27s\x20Old\x20Boys','C.\x20Lykogiannis,29,Bologna',_0x2c50da(0x1bd),_0x2c50da(0x293),_0x2c50da(0x1e2),_0x2c50da(0x17f),_0x2c50da(0x177),_0x2c50da(0x271),_0x2c50da(0x2bc),_0x2c50da(0x259),_0x2c50da(0x236),'D.\x20da\x20Costa,29,Mainz\x2005',_0x2c50da(0x170),_0x2c50da(0x178),_0x2c50da(0x2ce),_0x2c50da(0x1fe),_0x2c50da(0x163),'E.\x20Meza,24,Colón',_0x2c50da(0x138),_0x2c50da(0x207),_0x2c50da(0x152),'N.\x20Mukiele,25,PSG',_0x2c50da(0x2a9),_0x2c50da(0x1fa),'N.\x20Morgantini,28,Platense',_0x2c50da(0x13c),'J.\x20Wießmeier,30,Ried','O.\x20El\x20Hilali,19,Espanyol','Y.\x20Atal,27,Nice',_0x2c50da(0x26d),_0x2c50da(0x2db),_0x2c50da(0x10d),_0x2c50da(0x254),_0x2c50da(0x1c5),_0x2c50da(0x23b),_0x2c50da(0x113),_0x2c50da(0x2ed),_0x2c50da(0x2dc),_0x2c50da(0xfb),_0x2c50da(0x1be),'M.\x20Bruno,29,Kortrijk',_0x2c50da(0x297),_0x2c50da(0x282),_0x2c50da(0x230),_0x2c50da(0x117),_0x2c50da(0xdf),_0x2c50da(0x19f),_0x2c50da(0x2f0),'CJ\x20Egan-Riley,20,Burnley','M.\x20Busi,23,Reims',_0x2c50da(0x29a),_0x2c50da(0x288),_0x2c50da(0x18b),'William,28,Cruzeiro',_0x2c50da(0x11c),'F.\x20Melegoni,24,Standard\x20Liège',_0x2c50da(0x24f),_0x2c50da(0x1f4),_0x2c50da(0x183),_0x2c50da(0x28f),_0x2c50da(0x171),_0x2c50da(0x105),'T.\x20Ndicka,23,Oostende','O.\x20Turton,30,Huddersfield\x20Town','H.\x20ter\x20Avest,26,Utrecht','S.\x20McCallum,22,Norwich\x20City',_0x2c50da(0x2d7),_0x2c50da(0x305),_0x2c50da(0x1a0),_0x2c50da(0x28a),_0x2c50da(0x291),_0x2c50da(0x166),_0x2c50da(0x2f3),_0x2c50da(0x181),'E.\x20Tchato,20,Montpellier',_0x2c50da(0xd4),_0x2c50da(0x214),_0x2c50da(0x202),_0x2c50da(0x213),_0x2c50da(0x1e0),_0x2c50da(0x2d8),_0x2c50da(0x29c),'R.\x20D\x27Haese,24,Oostende',_0x2c50da(0x16d),_0x2c50da(0x179),_0x2c50da(0x28e),_0x2c50da(0x233),_0x2c50da(0x2ab),_0x2c50da(0x317),_0x2c50da(0x2a4),_0x2c50da(0x19e),_0x2c50da(0x18a),_0x2c50da(0x29f),_0x2c50da(0x118),'T.\x20Lamptey,22,Brighton',_0x2c50da(0xf1),_0x2c50da(0x232),_0x2c50da(0x303),'Marlon,29,América\x20Mineiro',_0x2c50da(0x13d),'M.\x20Doherty,31,Atlético\x20Madrid',_0x2c50da(0x19a),_0x2c50da(0x195),_0x2c50da(0x125),_0x2c50da(0x11d),_0x2c50da(0xcd),_0x2c50da(0x156),_0x2c50da(0x2bd),_0x2c50da(0x10a),'Natanael,21,Coritiba',_0x2c50da(0x2d3),_0x2c50da(0xd6),_0x2c50da(0x153),'G.\x20Compagnucci,31,Belgrano',_0x2c50da(0x133),'J.\x20Barrett\x20Laursen,28,Standard\x20Liège',_0x2c50da(0x223),_0x2c50da(0x211),_0x2c50da(0x237),'Matheus\x20Alexandre,24,Cuiabá',_0x2c50da(0x29e),_0x2c50da(0xd5),'T.\x20Delaine,31,Strasbourg',_0x2c50da(0x242),_0x2c50da(0x1b6),_0x2c50da(0x185),_0x2c50da(0x2bf),_0x2c50da(0x2a5),_0x2c50da(0x275),_0x2c50da(0x122),_0x2c50da(0x17e),'Paulinho,31,Marítimo','Héctor\x20Bellerín,28,Sporting\x20CP',_0x2c50da(0x12f),_0x2c50da(0x21d),'L.\x20Pellegrini,24,Lazio',_0x2c50da(0x26b),_0x2c50da(0x2cc),_0x2c50da(0x145),_0x2c50da(0xc3),_0x2c50da(0x1f3),_0x2c50da(0x1e5),_0x2c50da(0x2f7),_0x2c50da(0xfa),_0x2c50da(0x120),_0x2c50da(0x27c),_0x2c50da(0x13e),_0x2c50da(0x1e6),_0x2c50da(0x193),_0x2c50da(0x174),_0x2c50da(0x306),_0x2c50da(0x2c1),_0x2c50da(0x309),_0x2c50da(0x108),_0x2c50da(0x194),_0x2c50da(0x154),_0x2c50da(0x2aa),_0x2c50da(0x1b2),_0x2c50da(0x227),'T.\x20Rothe,18,Borussia\x20Dortmund',_0x2c50da(0x278),_0x2c50da(0x2c6),_0x2c50da(0x256),_0x2c50da(0x2ca),'G.\x20Pezzella,25,Lecce',_0x2c50da(0xe3),'Mateusinho,24,Cuiabá',_0x2c50da(0x2c7),_0x2c50da(0x30e)],searchInput=document[_0x2c50da(0x294)](_0x2c50da(0x1ac)),matchingNamesContainer=document['getElementById']('matchingNames'),searchButton=document['getElementById']('searchButton');function isMobileDevice(){const _0x30a758=_0x2c50da,_0x5c8893=navigator[_0x30a758(0x264)];return/Android|iPhone/i['test'](_0x5c8893);}function updateMatchingNames(){const _0xc13266=_0x2c50da,_0x41fbc5=removeSpecialChars(searchInput['value'][_0xc13266(0x1a7)]()),_0xc3406=names[_0xc13266(0xd2)](function(_0x420d86){const _0x55e85b=_0xc13266,[_0x268b4d]=_0x420d86[_0x55e85b(0x1e9)](','),_0x4fbf2d=removeSpecialChars(_0x268b4d['toLowerCase']());return _0x4fbf2d['includes'](_0x41fbc5);});matchingNamesContainer[_0xc13266(0xfd)]='',_0xc3406[_0xc13266(0x2e1)](function(_0x13eed0){const _0x4228ef=_0xc13266,[_0x7fe2a7,_0x108860,_0x47afd7]=_0x13eed0[_0x4228ef(0x1e9)](','),_0x40a5ad=document[_0x4228ef(0x2f2)]('div');_0x40a5ad[_0x4228ef(0x1ea)][_0x4228ef(0x180)]('name');const _0x107816=document[_0x4228ef(0x2f2)](_0x4228ef(0x2b5));_0x107816[_0x4228ef(0x2e3)]=_0x7fe2a7,_0x107816[_0x4228ef(0x1ea)][_0x4228ef(0x180)](_0x4228ef(0x307)),_0x40a5ad[_0x4228ef(0x10e)](_0x107816);const _0x49a55c=document[_0x4228ef(0x2f2)]('span');_0x49a55c[_0x4228ef(0x2e3)]='\x20('+_0x108860+',',_0x49a55c[_0x4228ef(0x1ea)][_0x4228ef(0x180)]('age'),_0x40a5ad['appendChild'](_0x49a55c);const _0xd95750=document[_0x4228ef(0x2f2)]('span');_0xd95750[_0x4228ef(0x2e3)]='\x20'+_0x47afd7+')',_0xd95750['classList'][_0x4228ef(0x180)](_0x4228ef(0x252)),_0x40a5ad[_0x4228ef(0x10e)](_0xd95750),_0x40a5ad[_0x4228ef(0x2ae)](_0x4228ef(0x10f),function(){const _0x35feb6=_0x4228ef;searchInput[_0x35feb6(0x21e)]=_0x7fe2a7,searchButton1[_0x35feb6(0x10f)]();}),matchingNamesContainer[_0x4228ef(0x10e)](_0x40a5ad);}),_0x41fbc5===''&&_0xc3406['length']===0x0?matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0x283)]=_0xc13266(0x141):(matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0x283)]=_0xc13266(0x16f),matchingNamesContainer['style'][_0xc13266(0x2b3)]=_0xc13266(0x12c),matchingNamesContainer[_0xc13266(0x22d)]['width']='384px',matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0x2e6)]=_0xc13266(0xf3),matchingNamesContainer['style'][_0xc13266(0x2c8)]=_0xc13266(0xef),matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0x148)]='12px',matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0x1ff)]='9999',isMobileDevice()?matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0xd8)]=_0xc13266(0x226):matchingNamesContainer[_0xc13266(0x22d)][_0xc13266(0xd8)]=_0xc13266(0x284)),_0x41fbc5===''&&(matchingNamesContainer[_0xc13266(0x22d)]['display']=_0xc13266(0x141));}function _0x1f5c(){const _0x3e57ab=['M.\x20Lowe,26,Sheffield\x20United','N.\x20Nkounkou,22,Saint-Étienne','userAgent','Adrián\x20Marín,26,Gil\x20Vicente','A.\x20Zedadka,28,Auxerre','R.\x20Lewis,18,Man\x20City','C.\x20Gamboa,33,Bochum','R.\x20Bensebaini,28,Borussia\x20M\x27gladbach','Juan\x20Iglesias,24,Getafe','J.\x20Barinaga,22,Belgrano','Diego\x20Moreno,21,Osasuna','Lucas\x20Rosa,23,Valladolid\x20Promesas','F.\x20Sacko,28,Montpellier','M.\x20Deijl,25,Go\x20Ahead\x20Eagles','Joãozinho,33,Estoril','Bruno\x20Pacheco,31,Fortaleza','N.\x20Molina,25,Atlético\x20Madrid','A.\x20Robertson,29,Liverpool','K.\x20Tsimikas,27,Liverpool','G.\x20Luján,22,San\x20Lorenzo','E.\x20Hysaj,29,Lazio','I.\x20Perišić,34,Tottenham','Jamerson,24,Coritiba','José\x20Gayá,28,Valencia','J.\x20Koundé,24,Barcelona','H.\x20Siquet,20,Cercle\x20Brugge','P.\x20Ghiglione,26,Cremonese','J.\x20Clauss,30,Olympique\x20Marseille','K.\x20Paal,25,Queens\x20Park\x20Rangers','C.\x20Wernitznig,33,Austria\x20Klagenfurt','Aarón\x20Martín,26,Mainz\x2005','P.\x20Mazzocchi,27,Salernitana','Carlos\x20Isaac,25,Albacete','display','5.9%','T.\x20Darikwa,31,Wigan\x20Athletic','M.\x20Alphonse,33,Ajaccio','1RDTMxh','O.\x20Drambaev,21,Zulte-Waregem','Miguel\x20Maga,20,Vitória\x20Guimarães','R.\x20Sessegnon,23,Tottenham','A.\x20Sampsted,25,Twente','L.\x20Advíncula,33,Boca\x20Juniors','C.\x20Styles,23,Millwall','D.\x20Kasius,20,Rapid\x20Wien','Javi\x20Hernández,25,Girona','P.\x20Stojanović,27,Empoli','Fágner,33,Corinthians','E.\x20Holm,22,Spezia','M.\x20De\x20Sciglio,30,Juventus','getElementById','G.\x20Di\x20Lorenzo,29,Napoli','K.\x20Mbabu,28,Servette','Paulo\x20Vitor,23,Rio\x20Ave','A.\x20Preciado,25,Genk','E.\x20Camavinga,20,Real\x20Madrid','J.\x20Piquerez,24,Palmeiras','Fran\x20García,23,Rayo\x20Vallecano','R.\x20Tsouka,28,Zulte-Waregem','C.\x20Terho,19,Union\x20Saint-Gilloise','Zé\x20Carlos,21,Vitória\x20Guimarães','L.\x20van\x20Gelderen,22,Groningen','Y.\x20Sugawara,22,AZ','M.\x20Pedersen,26,Augsburg','João\x20Moutinho,25,Spezia','J.\x20Allevinah,28,Clermont','W.\x20Zaire-Emery,17,PSG','K.\x20Stafylidis,29,Bochum','N.\x20Mazraoui,25,Bayern\x20München','P.\x20Kadeřábek,31,Hoffenheim','M.\x20Pearson,29,Huddersfield\x20Town','Matheus\x20Pereira,22,Vizela','M.\x20De\x20Wit,25,AZ','Mariano,36,Atlético\x20Mineiro','M.\x20Wolf,28,Borussia\x20Dortmund','M.\x20Senaya,22,Rodez','addEventListener','J.\x20Headley,21,Huddersfield\x20Town','F.\x20Stojković,30,LASK','A.\x20Fadera,21,Zulte-Waregem','S.\x20Coleman,34,Everton','backgroundColor','L.\x20Spinazzola,30,Roma','span','T.\x20Weah,23,Lille','Abner,23,Real\x20Betis','R.\x20Kristensen,25,Leeds\x20United','Igor\x20Julião,28,Vizela','T.\x20Hume,21,Sunderland','D.\x20Kreiker,20,Austria\x20Wien','Nacho\x20Vidal,28,Osasuna','Gabriel\x20Inocêncio,28,Santos','S.\x20El\x20Karouani,22,NEC','B.\x20Barros\x20Schelotto,23,Gimnasia\x20La\x20Plata','M.\x20Youssouf,35,Ajaccio','Lucas\x20Pires,22,Santos','Alexsander,19,Fluminense','T.\x20Alexander-Arnold,24,Liverpool','D.\x20Faraoni,31,Hellas\x20Verona','J.\x20Bogle,22,Sheffield\x20United','J.\x20Scherzer,27,Wolfsberger\x20AC','M.\x20Akanji,27,Man\x20City','position','I.\x20Abdulrazak,21,Anderlecht','Fábio\x20Santos,37,Corinthians','O.\x20Deman,23,Cercle\x20Brugge','Mayke,30,Palmeiras','A.\x20Alese,22,Sunderland','S.\x20Janko,27,Bochum','Pipa,25,Ludogorets','C.\x20Lenz,28,Eintracht\x20Frankfurt','J.\x20Rankin-Costello,23,Blackburn\x20Rovers','118072aNeodF','S.\x20Dest,22,Milan','T.\x20Ebuehi,27,Empoli','F.\x20Ortega,24,Vélez\x20Sarsfield','Hugo\x20Mallo,31,Celta\x20de\x20Vigo','Álex\x20Centelles,23,Almería','M.\x20Barcia,22,Independiente','S.\x20Sambo,21,Sparta\x20Rotterdam','B.\x20Bereszyński,30,Napoli','F.\x20Fabra,32,Boca\x20Juniors','Luis\x20Pérez,28,Real\x20Valladolid','J.\x20Teze,23,PSV','F.\x20Mura,24,Racing\x20Club','Yuri\x20Berchiche,33,Athletic\x20Bilbao','Aritz\x20Elustondo,29,Real\x20Sociedad','forEach','R.\x20Gosens,29,Internazionale','textContent','K.\x20Hoever,21,Wolverhampton','C.\x20Connolly,25,Blackpool','padding','Víctor\x20Gómez,23,Sporting\x20Braga','F.\x20Depaoli,26,Hellas\x20Verona','D.\x20Rensch,20,Ajax','Álvaro\x20Fernández,20,Preston\x20North\x20End','Tinga,29,Fortaleza','G.\x20Benavídez,27,Talleres\x20Córdoba','Tiago\x20Araújo,22,Estoril','R.\x20Pereyra,32,Udinese','6mkhbBr','Renê,30,Internacional','R.\x20Skov,27,Hoffenheim','createElement','Marçal,34,Botafogo','Arthur\x20Gomes,24,Sporting\x20CP','192783LUmgdP','C.\x20Pring,25,Bristol\x20City','B.\x20Godfrey,25,Everton','18860TFQysx','Jordi\x20Alba,34,Barcelona','Nélson\x20Semedo,29,Wolverhampton','M.\x20Moreira,28,Austria\x20Klagenfurt','L.\x20Kübler,30,Freiburg','M.\x20Romeo,27,Cardiff\x20City','G.\x20Mensah,24,Auxerre','D.\x20Zappacosta,30,Atalanta','J.\x20Veltman,31,Brighton','Sander,32,Goiás','D.\x20Raum,25,RB\x20Leipzig','L.\x20Esquivel,21,Unión\x20Santa\x20Fe','J.\x20Cuadrado,35,Juventus','Josan,33,Elche','T.\x20Mohr,27,Schalke\x2004','fullName','J.\x20Tchatchoua,21,Charleroi','R.\x20Saravia,29,Atlético\x20Mineiro','M.\x20López,23,Feyenoord','Jonny\x20Otto,29,Wolverhampton','F.\x20Centonze,27,Nantes','1596329CxGevT','Average,26,Club','F.\x20Mendy,27,Real\x20Madrid','2375195sZWbCH','D.\x20Liénard,35,Strasbourg','Vitor\x20Costa,28,Marítimo','Manu\x20Sánchez,22,Osasuna','Emerson\x20Royal,24,Tottenham','3883ylhrAT','Carraça,30,Gil\x20Vicente','M.\x20Peinipil,24,Barracas\x20Central','O.\x20Kakay,25,Queens\x20Park\x20Rangers','C.\x20Brunner,29,Schalke\x2004','Z.\x20Sanusi,25,Porto','J.\x20Hoilett,32,Reading','A.\x20Maitland-Niles,25,Southampton','S.\x20Posch,26,Bologna','J.\x20Le\x20Cardinal,25,Lens','D.\x20Cirkin,21,Sunderland','S.\x20Ingolitsch,26,Sturm\x20Graz','M.\x20Plattenhardt,31,Hertha\x20BSC','A.\x20Rodríguez,22,Rosario\x20Central','198BwNqvz','Andoni\x20Gorosabel,26,Real\x20Sociedad','T.\x20Malacia,23,Man\x20United','Óscar\x20Gil,25,Espanyol','R.\x20Giles,23,Middlesbrough','J.\x20Bidwell,30,Coventry\x20City','L.\x20Rao-Lisoa,22,Angers\x20SCO','Xavi\x20Quintillà,26,Santa\x20Clara','M.\x20Léris,25,Sampdoria','367668wqKklB','J.\x20Hector,33,Köln','H.\x20Mendyl,25,OH\x20Leuven','filter','Rogério,25,Sassuolo','V.\x20Barco,18,Boca\x20Juniors','T.\x20Ouwejan,26,Schalke\x2004','S.\x20Bakari,28,RKC\x20Waalwijk','Javi\x20Galán,28,Celta\x20de\x20Vigo','top','K.\x20Amian,25,Spezia','A.\x20Zanoli,22,Sampdoria','J.\x20Juranović,27,Union\x20Berlin','S.\x20Montiel,22,Argentinos\x20Juniors','K.\x20Çalhanoğlu,20,Sandhausen','Pedro\x20Malheiro,22,Boavista','A.\x20Bernabéi,22,Celtic','D.\x20Thompson,22,Blackpool','M.\x20Sorinola,22,Swansea\x20City','N.\x20Clyne,32,Crystal\x20Palace','Rafinha,37,São\x20Paulo','J.\x20Kenny,26,Hertha\x20BSC','M.\x20Roerslev,23,Brentford','M.\x20Braida,26,San\x20Lorenzo','D.\x20Blind,33,Bayern\x20München','Ismaily,33,Lille','S.\x20Horemans,25,Excelsior','João\x20Correia,26,Chaves','W.\x20Singo,22,Torino','M.\x20N\x27Diaye,20,Anderlecht','Danilo\x20Veiga,20,Rijeka','Emerson\x20Palmieri,28,West\x20Ham','absolute','L.\x20Patris,21,OH\x20Leuven','Lucas\x20Piton,22,Vasco\x20da\x20Gama','M.\x20Vojvoda,28,Torino','10px','Daniel\x20Carvajal,31,Real\x20Madrid','B.\x20Henrichs,26,RB\x20Leipzig','J.\x20Graham,28,Birmingham\x20City','P.\x20Max,29,Eintracht\x20Frankfurt','J.\x20Vagnoman,22,Stuttgart','A.\x20van\x20Hoorenbeeck,24,Mechelen','L.\x20Torres,22,Rodez','J.\x20Stanišić,23,Bayern\x20München','Leonardo\x20Lelo,23,Casa\x20Pia\x20AC','innerHTML','G.\x20Kalulu,25,Lorient','D.\x20Schnegg,24,Sturm\x20Graz','Alex\x20Telles,30,Sevilla','keyup','Anderson,25,Austria\x20Lustenau','C.\x20Trimmel,36,Union\x20Berlin','E.\x20Bocat,23,Sint-Truiden','F.\x20Oppegård,20,Go\x20Ahead\x20Eagles','M.\x20Kerkez,19,AZ','Afonso\x20Freitas,23,Vitória\x20Guimarães','R.\x20Pierre-Gabriel,24,Espanyol','W.\x20Kamanzi,22,Toulouse','N.\x20Breitenbruch,27,Arsenal','Neto\x20Borges,26,Clermont','D.\x20Furlong,27,WBA','Marlon,26,Cruzeiro','appendChild','click','O.\x20Sych,22,Kortrijk','A.\x20Spörle,27,Arsenal','D.\x20Suárez,35,Getafe','J.\x20Justin,25,Leicester\x20City','M.\x20Lazzari,29,Lazio','B.\x20Locko,21,Brest','F.\x20Dimarco,25,Internazionale','Abdu\x20Conté,25,Troyes','J.\x20Rodríguez,26,Vasco\x20da\x20Gama','B.\x20Kuipers,28,Go\x20Ahead\x20Eagles','C.\x20Drameh,21,Luton\x20Town','M.\x20Bouchouari,22,Emmen','T.\x20Guidara,27,Vélez\x20Sarsfield','M.\x20Pašalić,22,Borussia\x20Dortmund','V.\x20Mykolenko,23,Everton','D.\x20Bradarić,23,Salernitana','R.\x20Karsdorp,28,Roma','C.\x20Bramall,27,Rotherham\x20United','Guga,24,Fluminense','J.\x20Zemura,23,Bournemouth','K.\x20Tierney,25,Arsenal','S.\x20Byram,29,Norwich\x20City','Iván\x20Balliu,31,Rayo\x20Vallecano','J.\x20Bree,25,Southampton','M.\x20Cash,25,Aston\x20Villa','Y.\x20Larouci,22,Troyes','B.\x20White,25,Arsenal','P.\x20Struijk,23,Leeds\x20United','#9c9b9b','Iza\x20Carcelén,30,Cádiz','Nuno\x20Santos,28,Sporting\x20CP','Nathan,21,Santos','J.\x20Gazibegović,23,Sturm\x20Graz','V.\x20Lazaro,27,Torino','M.\x20Murillo,27,Anderlecht','J.\x20Uronen,28,Schalke\x2004','J.\x20Delgado,30,Paços\x20de\x20Ferreira','R.\x20Baku,25,Wolfsburg','D.\x20Murkin,23,Volendam','J.\x20Lelieveld,25,RKC\x20Waalwijk','S.\x20Prieto,30,Tigre','L.\x20Arce,25,Godoy\x20Cruz','A.\x20Young,37,Aston\x20Villa','Carlos\x20Augusto,24,Monza','Maguinho,31,Goiás','Wesley,19,Flamengo','D.\x20Gosling,33,Watford','A.\x20Hickey,20,Brentford','Jay\x20Dasilva,25,Bristol\x20City','none','J.\x20Cabrera,31,Argentinos\x20Juniors','B.\x20Plat,23,Volendam','Iván\x20Fresneda,18,Real\x20Valladolid','G.\x20Quagliata,23,Cremonese','Alexandre\x20Penetra,21,Famalicão','A.\x20Gallo,23,Lecce','left','D.\x20Calabria,26,Milan','A.\x20Bruus,24,Troyes','J.\x20Husband,29,Blackpool','Juan\x20Miranda,23,Real\x20Betis','Rubén\x20Peña,31,Osasuna','G.\x20Soto,29,Huracán','M.\x20Simakan,23,RB\x20Leipzig','G.\x20Kyriakopoulos,27,Bologna','Carlos\x20Clerc,31,Elche','Khellven,22,Athletico\x20Paranaense','M.\x20Djénépo,24,Southampton','G.\x20Gudmundsson,24,Lille','A.\x20Ulmer,37,Salzburg','N.\x20Dyhr,21,Kortrijk','J.\x20Bataille,24,Antwerp','P.\x20Frankowski,28,Lens','T.\x20Augello,28,Sampdoria','G.\x20Ávila,21,Antwerp','S.\x20Corchia,32,Nantes','J.\x20Mojica,30,Villarreal','Óscar\x20Mingueza,24,Celta\x20de\x20Vigo','A.\x20Jašić,20,Wolfsberger\x20AC','S.\x20Walsh,28,Mechelen','Nuno\x20Mendes,20,PSG','A.\x20Soto,29,Defensa\x20y\x20Justicia','N.\x20Veratschnig,20,Wolfsberger\x20AC','M.\x20Diarra,22,Toulouse','M.\x20Richter,25,Hertha\x20BSC','Paulo\x20Otávio,28,Wolfsburg','Patrick,30,Atlético\x20Mineiro','R.\x20Brady,31,Preston\x20North\x20End','J.\x20Sánchez,25,Ajax','D.\x20Foulquier,30,Valencia','E.\x20Laird,21,Queens\x20Park\x20Rangers','J.\x20McClean,34,Wigan\x20Athletic','Sergi\x20Roberto,31,Barcelona','L.\x20Hjelde,19,Rotherham\x20United','K.\x20Walker-Peters,26,Southampton','block','Rubens,21,Atlético\x20Mineiro','Sávio,28,Rio\x20Ave','L.\x20Digne,29,Aston\x20Villa','Angeliño,26,Hoffenheim','D.\x20Dankerlui,26,Groningen','T.\x20Somers,24,Cercle\x20Brugge','M.\x20Bard,22,Nice','G.\x20Bettini,30,Sarmiento','J.\x20Doig,21,Hellas\x20Verona','B.\x20Aguirre,22,Lanús','key','D.\x20Odoi,35,Club\x20Brugge','A.\x20Dedić,20,Salzburg','M.\x20Anzolin,22,Wolfsberger\x20AC','D.\x20Yongwa,22,Lorient','A.\x20Koita,24,Sint-Truiden','add','E.\x20Insúa,32,Banfield','E.\x20Jordanov,29,Westerlo','S.\x20Marcich,25,Platense','A.\x20Davies,22,Bayern\x20München','Diogo\x20Calila,24,Santa\x20Clara','S.\x20Vines,23,Antwerp','A.\x20Witry,27,Ludogorets','L.\x20Abanda,22,Lamia','T.\x20Smith,31,Middlesbrough','J.\x20Díaz,25,Barracas\x20Central','J.\x20Cáceres,23,Lanús','B.\x20van\x20Rooij,22,NEC','I.\x20Diallo,26,Ajaccio','R.\x20Charles-Cook,26,Eupen','G.\x20Smal,25,Twente','S.\x20Kumbedi,18,Olympique\x20Lyonnais','J.\x20Hato,17,Ajax','N.\x20Williams,22,Nottingham\x20Forest','R.\x20Carstensen,22,Genk','Sergio\x20Gómez,22,Man\x20City','Pedrinho,20,Athletico\x20Paranaense','K.\x20Veendorp,26,Emmen','D.\x20Payne,20,Volendam','D.\x20Abels,25,Sparta\x20Rotterdam','N.\x20Aké,28,Man\x20City','Reinaldo,33,Grêmio','C.\x20Brittain,25,Blackburn\x20Rovers','N.\x20Tagliafico,30,Olympique\x20Lyonnais','J.\x20Mendes,20,Sporting\x20Braga','Wilson\x20Manafá,28,Porto','Toti,24,Wolverhampton','L.\x20Blondel,26,Tigre','J.\x20Lotomba,24,Nice','P.\x20Pomer,25,Ried','A.\x20Cresswell,33,West\x20Ham','R.\x20Ranftl,31,Austria\x20Wien','Jon\x20Moncayola,25,Osasuna','S.\x20Klaiber,28,Utrecht','toLowerCase','T.\x20Schick,33,Rapid\x20Wien','Y.\x20Van\x20Genechten,22,Eupen','F.\x20Dabo,27,Coventry\x20City','H.\x20Clarke,22,Ipswich\x20Town','searchInput1','G.\x20Kastanos,25,Salernitana','Vanderson,21,Monaco','S.\x20Aurier,30,Nottingham\x20Forest','J.\x20Foyth,25,Villarreal','R.\x20Henry,25,Brentford','J.\x20Hurtado,21,Red\x20Bull\x20Bragantino','Alejandro\x20Balde,19,Barcelona','J.\x20Davidson,31,Eupen','Jesús\x20Navas,37,Sevilla','D.\x20Leidner,21,Austria\x20Wien','T.\x20Meunier,31,Borussia\x20Dortmund','A.\x20Lutovac,25,Ried','J.\x20Hadjam,20,Nantes','T.\x20Baldé,20,Troyes','S.\x20Malone,32,Millwall','Fran\x20Delgado,21,Betis\x20Deportivo','J.\x20Roussillon,30,Union\x20Berlin','G.\x20Enrique,23,Gimnasia\x20La\x20Plata','Mica\x20Pinto,30,Sparta\x20Rotterdam','Alejandro\x20Grimaldo,27,Benfica','L.\x20Thomas,21,Leicester\x20City','Sergio\x20Escudero,33,Real\x20Valladolid','Antunes,36,Paços\x20de\x20Ferreira','Marc\x20Cucurella,24,Chelsea','B.\x20Milovanov,25,Arouca','Theo\x20Hernández,25,Milan','B.\x20Onyemaechi,24,Boavista','Juan\x20Cruz,30,Osasuna','H.\x20Hateboer,29,Atalanta','L.\x20Ayling,31,Leeds\x20United','S.\x20Ferguson,32,Rotherham\x20United','P.\x20van\x20Aanholt,32,PSV','E.\x20Valeri,24,Cremonese','Pepê,26,Porto','J.\x20Mansoni,26,RFC\x20Seraing','Aitor\x20Ruibal,27,Real\x20Betis','Kiko\x20Femenía,32,Villarreal','M.\x20Polster,20,Austria\x20Wien','P.\x20Groß,31,Brighton','N.\x20Miroshi,20,Zulte-Waregem','Kiki,28,Vizela','M.\x20Colin,31,Birmingham\x20City','G.\x20Álvarez,23,Getafe','Sergio\x20Akieme,25,Almería','João\x20Cancelo,29,Bayern\x20München','Paulo\x20Henrique,26,Santa\x20Clara','K.\x20Ehizibue,27,Udinese','V.\x20Gendrey,22,Lecce','C.\x20Biraghi,30,Fiorentina','A.\x20Candreva,36,Salernitana','Á.\x20Lopera,29,Aston\x20Villa','Flávio\x20Nazinho,19,Sporting\x20CP','Tiago\x20Esgaio,27,Arouca','R.\x20Aguilar,30,Monaco','Mateus\x20Quaresma,26,Arouca','Danilo\x20Soares,31,Bochum','O.\x20Aina,26,Torino','M.\x20Aydin,21,Schalke\x2004','A.\x20Lyons,22,Blackpool','M.\x20Casco,35,River\x20Plate','split','classList','I.\x20Maatsen,21,Burnley','T.\x20Tomiyasu,24,Arsenal','M.\x20Melluso,24,Gimnasia\x20La\x20Plata','E.\x20Sobol,28,Strasbourg','D.\x20Giannoulis,27,Norwich\x20City','L.\x20Di\x20Plácido,29,Botafogo','Lucas\x20Vázquez,31,Real\x20Madrid','Dodô,24,Fiorentina','R.\x20Ogawa,26,Vitória\x20Guimarães','B.\x20Bolingoli,27,Mechelen','A.\x20Dønnum,25,Standard\x20Liège','B.\x20Pittón,30,Newell\x27s\x20Old\x20Boys','Pedro\x20Porro,23,Tottenham','M.\x20Orihuela,31,Atlético\x20Tucumán','Y.\x20Carrasco,29,Atlético\x20Madrid','R.\x20Delgado,33,Colón','H.\x20Guenouche,23,Austria\x20Lustenau','M.\x20Seck,27,Portimonense','C.\x20Elder,28,Hull\x20City','M.\x20Phillips,32,WBA','zIndex','K.\x20Sildillia,21,Freiburg','L.\x20Gooch,27,Sunderland','Toni\x20Lato,25,Valencia','Diogo\x20Dalot,24,Man\x20United','J.\x20Eccles,23,Coventry\x20City','J.\x20Lawrence-Gabriel,24,Blackpool','P.\x20Sagna,32,Santa\x20Clara','Tomás\x20Silva,23,Vizela','P.\x20Ciurria,28,Monza','J.\x20Frimpong,22,Bayer\x20Leverkusen','Cláudio\x20Winck,29,Marítimo','Ricardo\x20Esgaio,30,Sporting\x20CP','Alejandro\x20Pozo,24,Almería','H.\x20Pickering,24,Blackburn\x20Rovers','R.\x20Aït\x20Nouri,21,Wolverhampton','T.\x20Mitchell,23,Crystal\x20Palace','P.\x20Estupiñán,25,Brighton','L.\x20Hall,18,Chelsea','K.\x20Sardella,21,Anderlecht','F.\x20Vera,25,Unión\x20Santa\x20Fe','E.\x20Coronel,26,Banfield','M.\x20Aarons,23,Norwich\x20City','Aihen\x20Muñoz,25,Real\x20Sociedad','T.\x20Kehrer,26,West\x20Ham','K.\x20Schindler,29,Köln','F.\x20Kostić,30,Juventus','M.\x20Samoise,21,Gent','Hélder\x20Sá,20,Vitória\x20Guimarães','L.\x20Lapoussin,27,Union\x20Saint-Gilloise','Rubén\x20Sánchez,22,Espanyol','value','Iago,26,Augsburg','B.\x20Blasi,27,Central\x20Córdoba\x20SdE','F.\x20Guilbert,28,Strasbourg','B.\x20Meling,28,Rennes','Hugo\x20Novoa,20,Basel','F.\x20Moufi,27,Portimonense','Nanú,28,Santa\x20Clara','2.8%','A.\x20Meli,22,Godoy\x20Cruz','R.\x20Nyambe,25,Wigan\x20Athletic','M.\x20Pedersen,22,Feyenoord','R.\x20Renner,29,LASK','Íñigo\x20Lekue,30,Athletic\x20Bilbao','Fábio\x20Ronaldo,22,Rio\x20Ave','style','G.\x20Baldock,30,Sheffield\x20United','G.\x20Benítez,29,Huracán','S.\x20Thioub,28,Angers\x20SCO','J.\x20Brenet,29,Twente','Caio\x20Paulista,25,São\x20Paulo','H.\x20Toffolo,27,Nottingham\x20Forest','D.\x20Lazović,32,Hellas\x20Verona','T.\x20Cassandro,23,Lecce','M.\x20Fofana,18,Gent','E.\x20Más,34,Estudiantes','N.\x20Patterson,21,Everton','B.\x20Potts,28,Preston\x20North\x20End','Tiago\x20Santos,20,Estoril','R.\x20Vita,22,Fortuna\x20Sittard','V.\x20Kristiansen,20,Leicester\x20City','Óscar\x20de\x20Marcos,34,Athletic\x20Bilbao','Mario\x20Gaspar,32,Watford','Wendell,29,Porto','A.\x20Hakimi,24,PSG','J.\x20Greaves,22,Hull\x20City','Y.\x20Baas,20,Ajax','L.\x20Godoy,28,Estudiantes','D.\x20Burn,31,Newcastle\x20United','A.\x20Doughty,23,Luton\x20Town','1057868zohpHa','M.\x20Novak,32,Wolfsberger\x20AC','Rúben\x20Lima,33,Famalicão','I.\x20Rodríguez,21,Banfield','L.\x20Geertruida,22,Feyenoord','T.\x20Buchanan,24,Club\x20Brugge','A.\x20Bangura,23,Cambuur','M.\x20van\x20Ewijk,22,Heerenveen','K.\x20Tete,27,Fulham','C.\x20Borja,30,Sporting\x20Braga','Q.\x20Bernard,33,Niort','Alberto\x20Moreno,30,Villarreal','team','A.\x20Smith,32,Bournemouth','N.\x20Fadiga,23,Brest','F.\x20Máter,24,Barracas\x20Central','C.\x20Dagba,24,Strasbourg','M.\x20Weiser,29,Werder\x20Bremen','Derick\x20Poloni,29,Casa\x20Pia\x20AC','L.\x20Souto,24,Arsenal','A.\x20Espino,31,Cádiz','A.\x20Jung,31,Werder\x20Bremen','H.\x20Traoré,31,Rennes','J.\x20Latibeaudiere,23,Swansea\x20City','N.\x20Gießelmann,31,Union\x20Berlin','B.\x20Meijer,20,Club\x20Brugge','A.\x20Skov\x20Olsen,23,Club\x20Brugge','Núrio\x20Fortuna,28,Gent'];_0x1f5c=function(){return _0x3e57ab;};return _0x1f5c();}searchInput['addEventListener']('input',updateMatchingNames),searchInput[_0x2c50da(0x2ae)](_0x2c50da(0x101),function(_0x576f77){const _0x427333=_0x2c50da;if(_0x576f77['key']==='Enter')searchButton1['click']();else _0x576f77[_0x427333(0x17a)]==='Backspace'&&updateMatchingNames();});
+</script>
+
+<div class="toggle-container">
+  <label class="toggle-label"></label>
+  <label class="toggle-checkbox">
+    <input type="checkbox" id="toggleButton" onclick="toggleFilling()" unchecked>
+    <span class="toggle-slider"></span>
+  </label>
+</div>
+
+
+<button onclick="takeScreenshot()" class="button-10"><div class="icon2"></div></button>
+
+
+  <script>
+
+const _0x2cfa9d=_0x4c9a;(function(_0xa774b0,_0x340d3c){const _0x40eed0=_0x4c9a,_0x21485b=_0xa774b0();while(!![]){try{const _0x17a5e4=parseInt(_0x40eed0(0x1c2))/0x1*(-parseInt(_0x40eed0(0x1bf))/0x2)+parseInt(_0x40eed0(0x214))/0x3+-parseInt(_0x40eed0(0x1f9))/0x4+parseInt(_0x40eed0(0x1ed))/0x5*(parseInt(_0x40eed0(0x1d9))/0x6)+parseInt(_0x40eed0(0x22b))/0x7+-parseInt(_0x40eed0(0x1ce))/0x8*(-parseInt(_0x40eed0(0x1bc))/0x9)+-parseInt(_0x40eed0(0x1c4))/0xa*(parseInt(_0x40eed0(0x230))/0xb);if(_0x17a5e4===_0x340d3c)break;else _0x21485b['push'](_0x21485b['shift']());}catch(_0x577cbb){_0x21485b['push'](_0x21485b['shift']());}}}(_0x3d82,0xd3420));function takeScreenshot(){const _0x2ff3d4=_0x4c9a,_0x4898df=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i['test'](navigator['userAgent']);let _0x2ffe38,_0x3fffc0,_0xeba280,_0x458059,_0xdcf4e5,_0x60315b,_0x343167;_0x4898df?(_0x2ffe38=0x0,_0x3fffc0=0x0,_0xeba280=-0.0147,_0x458059=0.06,_0xdcf4e5=0.23,_0x60315b=0x3a2,_0x343167=0x2d3):(_0x2ffe38=0x0,_0x3fffc0=0x0,_0xeba280=-0.0087,_0x458059=0.05,_0xdcf4e5=0.385,_0x60315b=0x4b0,_0x343167=0x2d3),domtoimage['toBlob'](document[_0x2ff3d4(0x209)](_0x2ff3d4(0x1b8)),{'width':_0x60315b,'height':_0x343167,'style':{'transform':_0x2ff3d4(0x205)}})[_0x2ff3d4(0x226)](_0x4cdd4c=>{const _0x5cc6fa=_0x2ff3d4,_0x40dd3a=new Image();_0x40dd3a[_0x5cc6fa(0x1fc)]=()=>{const _0x36525f=_0x5cc6fa,_0x580d77=_0x40dd3a[_0x36525f(0x202)]*_0xeba280,_0x5aad3e=_0x40dd3a[_0x36525f(0x228)]*_0x458059,_0x24ab8f=_0x40dd3a[_0x36525f(0x202)]-_0x580d77-_0x40dd3a[_0x36525f(0x202)]*_0xdcf4e5,_0x4756eb=_0x40dd3a[_0x36525f(0x228)]-_0x5aad3e,_0x5d2709=document[_0x36525f(0x238)](_0x36525f(0x1dd));_0x5d2709[_0x36525f(0x202)]=_0x24ab8f,_0x5d2709[_0x36525f(0x228)]=_0x4756eb;const _0x197148=_0x5d2709[_0x36525f(0x1c8)]('2d'),_0x3b51e8=localStorage[_0x36525f(0x213)](_0x36525f(0x1e6)),_0x1faff9=_0x3b51e8===_0x36525f(0x236)||window['matchMedia']('(prefers-color-scheme:\x20dark)')[_0x36525f(0x1fa)];_0x1faff9?_0x197148['fillStyle']=_0x36525f(0x216):_0x197148[_0x36525f(0x233)]=_0x36525f(0x20a),_0x197148[_0x36525f(0x1d0)](0x0,0x0,_0x5d2709[_0x36525f(0x202)],_0x5d2709[_0x36525f(0x228)]),_0x197148['drawImage'](_0x40dd3a,_0x580d77,_0x5aad3e,_0x24ab8f,_0x4756eb,0x0,0x0,_0x24ab8f,_0x4756eb),_0x197148[_0x36525f(0x245)]=_0x36525f(0x1e0),_0x197148['fillStyle']=_0x36525f(0x22c),_0x197148[_0x36525f(0x1ee)](_0x36525f(0x1d5),0x275,0x2a4),_0x5d2709[_0x36525f(0x1dc)](_0x1f5050=>{const _0x17f018=_0x36525f,_0x515c0e=document[_0x17f018(0x238)]('a');_0x515c0e[_0x17f018(0x1e8)]=URL['createObjectURL'](_0x1f5050),_0x515c0e[_0x17f018(0x206)]=_0x17f018(0x22f),_0x515c0e['click']();},_0x36525f(0x241));},_0x40dd3a[_0x5cc6fa(0x235)]=URL[_0x5cc6fa(0x210)](_0x4cdd4c);});}function _0x4c9a(_0x4b7c42,_0x24c93c){const _0x3d82ca=_0x3d82();return _0x4c9a=function(_0x4c9a9d,_0x402c5c){_0x4c9a9d=_0x4c9a9d-0x1b6;let _0x5d9ff5=_0x3d82ca[_0x4c9a9d];return _0x5d9ff5;},_0x4c9a(_0x4b7c42,_0x24c93c);}const csvData='1,Theo\x20Hernández,Milan,25,0.539,0.728,0.308,0.206,0.676,0.876,0.876,4958\x0a2,Alejandro\x20Grimaldo,Benfica,27,0.706,0.978,0.578,0.252,0.721,0.691,0.773,5162\x0a3,C.\x20Roberts,Burnley,27,0.516,0.129,0.785,0.054,0.069,0.223,0.513,5020\x0a4,A.\x20Bell,Luton\x20Town,29,0.496,0.217,0.469,0.684,0.375,0.683,0.846,5002\x0a5,G.\x20Di\x20Lorenzo,Napoli,29,0.141,0.728,0.905,0.099,0.162,0.585,0.320,4792\x0a6,J.\x20McClean,Wigan\x20Athletic,34,0.714,0.886,0.377,0.598,0.225,0.589,0.333,4676\x0a7,M.\x20Kerkez,AZ,19,0.520,0.728,0.112,0.475,0.603,0.739,0.650,4673\x0a8,L.\x20Shaw,Man\x20United,27,0.858,0.728,0.766,0.523,0.843,0.919,0.513,4650\x0a9,N.\x20Molina,Atlético\x20Madrid,25,0.437,0.728,0.616,0.286,0.383,0.178,0.420,4650\x0a10,Pepê,Porto,26,0.834,0.842,0.201,0.060,0.248,0.315,0.830,4596\x0a11,K.\x20Trippier,Newcastle\x20United,32,0.816,0.999,0.986,0.616,0.457,0.443,0.195,4557\x0a12,M.\x20Colin,Birmingham\x20City,31,0.768,0.064,0.355,0.529,0.469,0.642,0.235,4546\x0a13,F.\x20Kostić,Juventus,30,0.646,0.983,0.349,0.133,0.662,0.189,0.842,4509\x0a14,M.\x20Murillo,Anderlecht,27,0.363,0.808,0.469,0.389,0.619,0.576,0.544,4501\x0a15,R.\x20Giles,Middlesbrough,23,0.552,0.991,0.826,0.044,0.407,0.338,0.430,4465\x0a16,D.\x20Dumfries,Internazionale,27,0.445,0.728,0.108,0.129,0.367,0.550,0.372,4437\x0a17,J.\x20Koundé,Barcelona,24,0.111,0.129,0.529,0.333,0.873,0.894,0.798,4423\x0a18,M.\x20Aarons,Norwich\x20City,23,0.501,0.466,0.662,0.238,0.791,0.475,0.983,4395\x0a19,T.\x20Castagne,Leicester\x20City,27,0.802,0.296,0.504,0.633,0.430,0.428,0.040,4352\x0a20,H.\x20Pickering,Blackburn\x20Rovers,24,0.879,0.129,0.636,0.580,0.933,0.202,0.052,4316\x0a21,C.\x20Townsend,WBA,30,0.896,0.608,0.773,0.238,0.730,0.749,0.603,4293\x0a22,L.\x20Lapoussin,Union\x20Saint-Gilloise,27,0.914,0.775,0.650,0.723,0.816,0.048,0.973,4277\x0a23,I.\x20Perišić,Tottenham,34,0.556,0.966,0.239,0.311,0.082,0.646,0.849,4266\x0a24,J.\x20Bidwell,Coventry\x20City,30,0.603,0.608,0.238,0.178,0.743,0.816,0.021,4259\x0a25,B.\x20Nieuwkoop,Union\x20Saint-Gilloise,27,0.185,0.381,0.255,0.769,0.508,0.508,0.069,4259\x0a26,C.\x20Biraghi,Fiorentina,30,0.984,0.993,0.978,0.295,0.544,0.516,0.773,4231\x0a27,R.\x20Manning,Swansea\x20City,26,0.611,0.991,0.633,0.155,0.751,0.479,0.496,4221\x0a28,E.\x20Camavinga,Real\x20Madrid,20,0.663,0.217,0.211,0.764,0.244,0.859,0.672,4213\x0a29,P.\x20Groß,Brighton,31,0.783,0.983,0.286,0.009,0.379,0.037,0.243,4185\x0a30,C.\x20Günter,Freiburg,30,0.811,0.941,0.290,0.029,0.111,0.134,0.101,4164\x0a31,J.\x20Juranović,Union\x20Berlin,27,0.920,0.842,0.728,0.137,0.142,0.103,0.696,4158\x0a32,A.\x20Lyons,Blackpool,22,0.064,0.064,0.003,0.097,0.136,0.168,0.258,4118\x0a33,A.\x20Robinson,Fulham,25,0.504,0.296,0.800,0.820,0.987,0.824,0.787,4092\x0a34,J.\x20Frimpong,Bayer\x20Leverkusen,22,0.444,0.864,0.022,0.124,0.627,0.249,0.999,4086\x0a35,T.\x20Alexander-Arnold,Liverpool,24,0.543,0.966,0.995,0.261,0.513,0.796,0.108,4084\x0a36,J.\x20Gazibegović,Sturm\x20Graz,23,0.441,0.296,0.614,0.704,0.849,0.298,0.270,4080\x0a37,D.\x20McNamara,Millwall,24,0.312,0.064,0.708,0.561,0.629,0.453,0.298,4079\x0a38,A.\x20Sampsted,Twente,25,0.521,0.728,0.782,0.696,0.965,0.467,0.977,4073\x0a39,Y.\x20Sugawara,AZ,22,0.406,0.886,0.723,0.256,0.452,0.304,0.278,3994\x0a40,D.\x20Burn,Newcastle\x20United,31,0.319,0.064,0.218,0.437,0.274,0.958,0.133,3983\x0a41,Caio\x20Henrique,Monaco,25,0.529,0.886,0.894,0.371,0.505,0.187,0.753,3973\x0a42,L.\x20Geertruida,Feyenoord,22,0.430,0.296,0.448,0.054,0.953,0.423,0.585,3972\x0a43,Diogo\x20Dalot,Man\x20United,24,0.538,0.608,0.620,0.470,0.275,0.975,0.415,3972\x0a44,J.\x20Greaves,Hull\x20City,22,0.013,0.129,0.377,0.862,0.950,0.982,0.178,3970\x0a45,A.\x20Marušić,Lazio,30,0.465,0.129,0.319,0.151,0.223,0.460,0.389,3967\x0a46,R.\x20Ranftl,Austria\x20Wien,31,0.065,0.608,0.867,0.889,0.897,0.517,0.852,3966\x0a47,C.\x20Connolly,Blackpool,25,0.928,0.026,0.168,0.653,0.265,0.783,0.010,3951\x0a48,G.\x20Smal,Twente,25,0.463,0.864,0.966,0.398,0.734,0.264,0.961,3949\x0a49,João\x20Cancelo,Bayern\x20München,29,0.252,0.728,0.779,0.136,0.590,0.903,0.970,3935\x0a50,B.\x20White,Arsenal,25,0.632,0.217,0.749,0.244,0.674,0.492,0.496,3927\x0a51,M.\x20Acuña,Sevilla,31,0.782,0.905,0.681,0.642,0.834,0.632,0.403,3908\x0a52,N.\x20Aké,Man\x20City,28,0.034,0.217,0.850,0.231,0.975,0.943,0.430,3899\x0a53,A.\x20Dedić,Salzburg,20,0.452,0.678,0.684,0.574,0.752,0.563,0.901,3887\x0a54,M.\x20van\x20Ewijk,Heerenveen,22,0.424,0.296,0.504,0.495,0.944,0.420,0.650,3874\x0a55,N.\x20Tagliafico,Olympique\x20Lyonnais,30,0.338,0.296,0.411,0.757,0.863,0.649,0.162,3863\x0a56,B.\x20Pavard,Bayern\x20München,27,0.499,0.296,0.960,0.748,0.958,0.922,0.192,3857\x0a57,K.\x20Paal,Queens\x20Park\x20Rangers,25,0.435,0.466,0.533,0.678,0.714,0.317,0.020,3855\x0a58,N.\x20Zalewski,Roma,21,0.275,0.466,0.368,0.346,0.183,0.082,0.898,3841\x0a59,Fran\x20García,Rayo\x20Vallecano,23,0.317,0.217,0.411,0.582,0.893,0.031,0.993,3836\x0a60,Daniel\x20Carvajal,Real\x20Madrid,31,0.232,0.466,0.424,0.555,0.112,0.809,0.089,3832\x0a61,Dodô,Fiorentina,24,0.727,0.678,0.655,0.268,0.522,0.714,0.922,3809\x0a62,G.\x20Arteaga,Genk,24,0.730,0.217,0.687,0.313,0.317,0.456,0.668,3801\x0a63,I.\x20Maatsen,Burnley,21,0.282,0.678,0.745,0.561,0.342,0.112,0.889,3796\x0a64,B.\x20Meijer,Club\x20Brugge,20,0.249,0.540,0.678,0.418,0.819,0.631,0.480,3790\x0a65,A.\x20Robertson,Liverpool,29,0.354,0.941,0.757,0.144,0.744,0.435,0.706,3784\x0a66,Iván\x20Balliu,Rayo\x20Vallecano,31,0.251,0.217,0.388,0.077,0.328,0.272,0.469,3771\x0a67,D.\x20Furlong,WBA,27,0.426,0.608,0.745,0.179,0.255,0.671,0.565,3766\x0a68,M.\x20De\x20Cuyper,Westerlo,22,0.239,0.842,0.939,0.813,0.883,0.675,0.394,3738\x0a69,A.\x20Hakimi,PSG,24,0.572,0.808,0.142,0.402,0.859,0.534,0.837,3730\x0a70,P.\x20Frankowski,Lens,28,0.685,0.926,0.516,0.479,0.308,0.183,0.383,3720\x0a71,G.\x20Baldock,Sheffield\x20United,30,0.580,0.608,0.295,0.214,0.326,0.328,0.394,3672\x0a72,W.\x20Anton,Stuttgart,26,0.307,0.064,0.923,0.661,0.914,0.841,0.406,3670\x0a73,Raphaël\x20Guerreiro,Borussia\x20Dortmund,29,0.406,0.886,0.834,0.090,0.390,0.317,0.843,3663\x0a74,Javi\x20Galán,Celta\x20de\x20Vigo,28,0.683,0.775,0.602,0.573,0.868,0.534,0.876,3657\x0a75,Alejandro\x20Balde,Barcelona,19,0.783,0.728,0.078,0.085,0.812,0.235,0.979,3650\x0a76,P.\x20Estupiñán,Brighton,25,0.736,0.864,0.538,0.406,0.718,0.420,0.802,3645\x0a77,J.\x20Ryerson,Borussia\x20Dortmund,25,0.594,0.296,0.398,0.526,0.856,0.765,0.534,3634\x0a78,R.\x20Henry,Brentford,25,0.800,0.296,0.070,0.231,0.150,0.231,0.265,3630\x0a79,Mateus\x20Quaresma,Arouca,26,0.134,0.129,0.616,0.805,0.440,0.702,0.603,3622\x0a80,V.\x20Coufal,West\x20Ham,30,0.492,0.728,0.871,0.500,0.155,0.815,0.513,3621\x0a81,Nuno\x20Santos,Sporting\x20CP,28,0.146,0.926,0.548,0.008,0.641,0.305,0.700,3613\x0a82,M.\x20Wallace,Millwall,30,0.659,0.129,0.864,0.675,0.514,0.902,0.650,3588\x0a83,G.\x20Suazo,Toulouse,25,0.915,0.466,0.901,0.932,0.546,0.283,0.811,3584\x0a84,D.\x20Muñoz,Genk,27,0.843,0.540,0.984,0.949,0.364,0.736,0.813,3579\x0a85,Óscar\x20de\x20Marcos,Athletic\x20Bilbao,34,0.735,0.678,0.970,0.619,0.415,0.691,0.539,3578\x0a86,K.\x20Walker,Man\x20City,33,0.102,0.064,0.534,0.026,0.281,0.804,0.496,3572\x0a87,V.\x20Le\x20Goff,Lorient,33,0.946,0.026,0.871,0.394,0.842,0.559,0.603,3567\x0a88,Jesús\x20Navas,Sevilla,37,0.497,0.808,0.778,0.141,0.313,0.095,0.333,3539\x0a89,B.\x20van\x20Rooij,NEC,22,0.676,0.540,0.398,0.876,0.811,0.753,0.258,3538\x0a90,M.\x20Samoise,Gent,21,0.449,0.728,0.820,0.570,0.164,0.219,0.850,3536\x0a91,J.\x20Cuadrado,Juventus,35,0.916,0.864,0.540,0.355,0.073,0.582,0.777,3531\x0a92,Mica\x20Pinto,Sparta\x20Rotterdam,30,0.948,0.381,0.873,0.235,0.460,0.569,0.859,3524\x0a93,B.\x20Potts,Preston\x20North\x20End,28,0.465,0.217,0.439,0.200,0.269,0.580,0.456,3518\x0a94,Pedro\x20Porro,Tottenham,23,0.576,0.978,0.838,0.364,0.292,0.166,0.783,3516\x0a95,J.\x20Clauss,Olympique\x20Marseille,30,0.608,0.966,0.463,0.035,0.179,0.142,0.811,3514\x0a96,T.\x20Augello,Sampdoria,28,0.890,0.728,0.860,0.007,0.090,0.590,0.465,3502\x0a97,José\x20Gayá,Valencia,28,0.653,0.905,0.758,0.264,0.991,0.676,0.634,3497\x0a98,J.\x20Hector,Köln,33,0.044,0.540,0.683,0.946,0.636,0.945,0.309,3495\x0a99,J.\x20Teze,PSV,23,0.762,0.466,0.796,0.521,0.924,0.946,0.247,3485\x0a100,I.\x20Määttä,Groningen,21,0.591,0.540,0.403,0.319,0.265,0.202,0.834,3470\x0a101,A.\x20Davies,Bayern\x20München,22,0.390,0.842,0.372,0.443,0.897,0.329,0.986,3469\x0a102,V.\x20Gendrey,Lecce,22,0.257,0.217,0.479,0.755,0.841,0.803,0.247,3468\x0a103,Carlos\x20Augusto,Monza,24,0.052,0.296,0.064,0.181,0.486,0.812,0.544,3465\x0a104,A.\x20Espino,Cádiz,31,0.672,0.540,0.645,0.898,0.747,0.234,0.225,3462\x0a105,Alexandre\x20Penetra,Famalicão,21,0.839,0.217,0.834,0.371,0.535,0.718,0.009,3447\x0a106,T.\x20Smith,Middlesbrough,31,0.232,0.129,0.867,0.595,0.439,0.599,0.249,3433\x0a107,K.\x20Sema,Watford,29,0.329,0.842,0.059,0.159,0.345,0.240,0.527,3428\x0a108,M.\x20Bard,Nice,22,0.187,0.129,0.496,0.824,0.709,0.653,0.580,3418\x0a109,Adrián\x20Marín,Gil\x20Vicente,26,0.385,0.129,0.950,0.371,0.149,0.833,0.368,3413\x0a110,S.\x20El\x20Karouani,NEC,22,0.296,0.466,0.201,0.349,0.375,0.303,0.565,3408\x0a111,F.\x20Dimarco,Internazionale,25,0.564,0.993,0.812,0.099,0.540,0.056,0.394,3408\x0a112,A.\x20Smith,Bournemouth,32,0.933,0.129,0.157,0.299,0.087,0.313,0.033,3407\x0a113,Wendell,Porto,29,0.684,0.678,0.103,0.217,0.401,0.794,0.936,3405\x0a114,A.\x20Dønnum,Standard\x20Liège,25,0.705,0.993,0.346,0.039,0.054,0.305,0.911,3402\x0a115,M.\x20Köhlert,Heerenveen,25,0.930,0.540,0.420,0.302,0.140,0.298,0.825,3402\x0a116,T.\x20Kehrer,West\x20Ham,26,0.547,0.026,0.148,0.807,0.615,0.533,0.070,3396\x0a117,J.\x20Brenet,Twente,29,0.778,0.678,0.308,0.608,0.796,0.176,0.624,3393\x0a118,Nuno\x20Sequeira,Sporting\x20Braga,32,0.368,0.608,0.965,0.711,0.602,0.920,0.265,3362\x0a119,Y.\x20Carrasco,Atlético\x20Madrid,29,0.253,0.886,0.026,0.029,0.120,0.093,0.984,3356\x0a120,R.\x20De\x20Laet,Antwerp,34,0.709,0.296,0.919,0.283,0.424,0.828,0.170,3346\x0a121,K.\x20Walker-Peters,Southampton,26,0.394,0.381,0.197,0.437,0.636,0.153,0.956,3343\x0a122,Y.\x20Soma,Casa\x20Pia\x20AC,26,0.322,0.941,0.023,0.014,0.061,0.305,0.911,3340\x0a123,J.\x20Auer,Rapid\x20Wien,22,0.623,0.953,0.987,0.715,0.552,0.658,0.585,3339\x0a124,T.\x20Somers,Cercle\x20Brugge,24,0.591,0.728,0.031,0.456,0.334,0.427,0.048,3337\x0a125,K.\x20Veendorp,Emmen,26,0.298,0.064,0.785,0.467,0.907,0.586,0.070,3328\x0a126,A.\x20Castro-Montes,Gent,26,0.829,0.808,0.859,0.864,0.290,0.586,0.843,3326\x0a127,C.\x20O\x27Dowda,Cardiff\x20City,28,0.170,0.381,0.128,0.424,0.978,0.461,0.718,3323\x0a128,V.\x20Mykolenko,Everton,23,0.606,0.217,0.279,0.856,0.550,0.255,0.108,3322\x0a129,E.\x20Valeri,Cremonese,24,0.465,0.728,0.509,0.125,0.078,0.119,0.834,3321\x0a130,Pablo\x20Maffeo,Mallorca,25,0.739,0.381,0.277,0.388,0.101,0.751,0.480,3315\x0a131,Pedro\x20Malheiro,Boavista,22,0.172,0.540,0.496,0.902,0.728,0.179,0.235,3311\x0a132,S.\x20Horemans,Excelsior,25,0.211,0.217,0.899,0.872,0.352,0.721,0.205,3303\x0a133,A.\x20Bah,Benfica,25,0.824,0.905,0.980,0.846,0.700,0.962,0.713,3302\x0a134,Rogério,Sassuolo,25,0.899,0.381,0.876,0.249,0.087,0.146,0.919,3296\x0a135,C.\x20Pring,Bristol\x20City,25,0.747,0.540,0.551,0.911,0.619,0.478,0.839,3292\x0a136,Nuno\x20Tavares,Olympique\x20Marseille,23,0.153,0.608,0.369,0.204,0.363,0.255,0.940,3289\x0a137,Yuri\x20Berchiche,Athletic\x20Bilbao,33,0.369,0.217,0.881,0.743,0.769,0.845,0.394,3278\x0a138,T.\x20Mitchell,Crystal\x20Palace,23,0.111,0.064,0.745,0.684,0.479,0.262,0.064,3265\x0a139,M.\x20Deijl,Go\x20Ahead\x20Eagles,25,0.281,0.296,0.576,0.551,0.603,0.973,0.057,3262\x0a140,Jon\x20Moncayola,Osasuna,25,0.577,0.129,0.803,0.779,0.171,0.362,0.298,3260\x0a141,D.\x20Murkin,Volendam,23,0.192,0.381,0.687,0.933,0.655,0.657,0.777,3259\x0a142,J.\x20Bree,Southampton,25,0.842,0.966,0.523,0.151,0.598,0.755,0.285,3250\x0a143,Nélson\x20Semedo,Wolverhampton,29,0.090,0.064,0.432,0.697,0.304,0.445,0.469,3250\x0a144,R.\x20Renner,LASK,29,0.332,0.608,0.967,0.919,0.790,0.595,0.898,3238\x0a145,B.\x20Onyemaechi,Boavista,24,0.144,0.540,0.527,0.602,0.700,0.680,0.443,3237\x0a146,H.\x20Traoré,Rennes,31,0.623,0.540,0.817,0.628,0.294,0.289,0.508,3233\x0a147,E.\x20Hysaj,Lazio,29,0.924,0.296,0.584,0.349,0.192,0.872,0.372,3227\x0a148,M.\x20Pedersen,Feyenoord,22,0.513,0.466,0.056,0.264,0.286,0.038,0.977,3214\x0a149,B.\x20Sosa,Stuttgart,25,0.766,0.983,0.820,0.051,0.232,0.821,0.747,3208\x0a150,F.\x20Parisi,Empoli,22,0.350,0.466,0.774,0.799,0.144,0.711,0.926,3202\x0a151,A.\x20Witry,Ludogorets,27,0.781,0.540,0.930,0.475,0.753,0.341,0.527,3200\x0a152,Francisco\x20Moura,Famalicão,23,0.719,0.540,0.210,0.520,0.097,0.751,0.700,3197\x0a153,Tiago\x20Esgaio,Arouca,27,0.315,0.129,0.493,0.443,0.202,0.706,0.033,3193\x0a154,J.\x20Maehle,Atalanta,26,0.505,0.608,0.504,0.159,0.159,0.051,0.941,3192\x0a155,D.\x20Odoi,Club\x20Brugge,35,0.178,0.064,0.805,0.786,0.445,0.599,0.544,3190\x0a156,A.\x20Fadera,Zulte-Waregem,21,0.155,0.842,0.001,0.342,0.463,0.102,0.980,3186\x0a157,Víctor\x20Gómez,Sporting\x20Braga,23,0.492,0.540,0.736,0.144,0.128,0.396,0.338,3178\x0a158,S.\x20Posch,Bologna,26,0.411,0.381,0.971,0.965,0.935,0.577,0.253,3161\x0a159,R.\x20Pereyra,Udinese,32,0.971,0.905,0.285,0.016,0.270,0.009,0.556,3159\x0a160,Costinha,Rio\x20Ave,23,0.341,0.296,0.287,0.995,0.449,0.394,0.556,3159\x0a161,P.\x20Max,Eintracht\x20Frankfurt,29,0.867,0.842,0.461,0.065,0.209,0.445,0.539,3149\x0a162,I.\x20Sylla,Montpellier,29,0.389,0.540,0.783,0.837,0.735,0.552,0.847,3146\x0a163,J.\x20Bataille,Antwerp,24,0.863,0.466,0.615,0.700,0.691,0.119,0.893,3130\x0a164,B.\x20Henrichs,RB\x20Leipzig,26,0.319,0.381,0.839,0.786,0.621,0.927,0.383,3129\x0a165,Antunes,Paços\x20de\x20Ferreira,36,0.195,0.466,0.889,0.675,0.877,0.164,0.420,3122\x0a166,Neto\x20Borges,Clermont,26,0.352,0.608,0.407,0.512,0.782,0.704,0.753,3121\x0a167,N.\x20Nkounkou,Saint-Étienne,22,0.087,0.864,0.627,0.490,0.377,0.638,0.911,3120\x0a168,P.\x20van\x20Aanholt,PSV,32,0.654,0.808,0.479,0.129,0.765,0.995,0.270,3117\x0a169,Arnau\x20Martínez,Girona,20,0.803,0.775,0.303,0.418,0.279,0.802,0.406,3117\x0a170,B.\x20Diakité,Lille,22,0.026,0.064,0.499,0.385,0.581,0.689,0.149,3116\x0a171,J.\x20Delgado,Paços\x20de\x20Ferreira,30,0.897,0.466,0.539,0.211,0.014,0.119,0.892,3115\x0a172,C.\x20Bramall,Rotherham\x20United,27,0.540,0.678,0.134,0.753,0.236,0.599,0.862,3109\x0a173,O.\x20Deman,Cercle\x20Brugge,23,0.383,0.926,0.616,0.935,0.582,0.756,0.056,3089\x0a174,A.\x20Cresswell,West\x20Ham,33,0.309,0.808,0.743,0.043,0.072,0.501,0.230,3089\x0a175,K.\x20Tete,Fulham,27,0.525,0.466,0.398,0.978,0.889,0.667,0.503,3082\x0a176,D.\x20Raum,RB\x20Leipzig,25,0.256,0.941,0.559,0.424,0.646,0.731,0.303,3069\x0a177,Álvaro\x20Fernández,Preston\x20North\x20End,20,0.369,0.728,0.372,0.401,0.138,0.594,0.802,3067\x0a178,R.\x20Baku,Wolfsburg,25,0.587,0.775,0.927,0.336,0.514,0.376,0.349,3067\x0a179,T.\x20Buchanan,Club\x20Brugge,24,0.110,0.540,0.007,0.154,0.757,0.052,0.933,3067\x0a180,Vitor\x20Costa,Marítimo,28,0.418,0.381,0.808,0.602,0.258,0.691,0.328,3060\x0a181,M.\x20Senaya,Rodez,22,0.500,0.466,0.249,0.368,0.739,0.480,0.933,3059\x0a182,J.\x20Hoilett,Reading,32,0.162,0.864,0.119,0.486,0.380,0.184,0.667,3052\x0a183,Jay\x20Dasilva,Bristol\x20City,25,0.509,0.678,0.247,0.073,0.783,0.033,0.265,3050\x0a184,P.\x20Ciurria,Monza,28,0.876,0.540,0.102,0.010,0.031,0.217,0.508,3049\x0a185,Á.\x20Lopera,Aston\x20Villa,29,0.298,0.608,0.214,0.523,0.136,0.676,0.962,3043\x0a186,F.\x20Stojković,LASK,30,0.217,0.608,0.926,0.833,0.687,0.728,0.474,3036\x0a187,L.\x20Blanco,Elche,24,0.342,0.941,0.953,0.262,0.928,0.001,0.787,3036\x0a188,Pipa,Ludogorets,25,0.663,0.296,0.606,0.279,0.761,0.163,0.611,3036\x0a189,V.\x20Kristiansen,Leicester\x20City,20,0.540,0.381,0.610,0.796,0.803,0.369,0.240,3033\x0a190,T.\x20Darikwa,Wigan\x20Athletic,31,0.936,0.381,0.710,0.200,0.121,0.302,0.424,3033\x0a191,Angeliño,Hoffenheim,26,0.845,0.941,0.885,0.206,0.595,0.061,0.097,3025\x0a192,N.\x20Williams,Nottingham\x20Forest,22,0.187,0.296,0.292,0.970,0.067,0.268,0.700,3015\x0a193,L.\x20Patris,OH\x20Leuven,21,0.215,0.217,0.324,0.990,0.385,0.731,0.634,3004\x0a194,J.\x20Latibeaudiere,Swansea\x20City,23,0.986,0.466,0.119,0.115,0.371,0.517,0.469,3003\x0a195,Bruno\x20Langa,Chaves,25,0.783,0.217,0.829,0.398,0.533,0.798,0.718,2998\x0a196,D.\x20Rensch,Ajax,20,0.178,0.129,0.598,0.585,0.983,0.711,0.349,2997\x0a197,A.\x20Candreva,Salernitana,36,0.530,0.926,0.734,0.000,0.050,0.069,0.287,2994\x0a198,L.\x20Spinazzola,Roma,30,0.610,0.608,0.513,0.022,0.124,0.085,1.000,2991\x0a199,Óscar\x20Gil,Espanyol,25,0.594,0.540,0.008,0.911,0.129,0.085,0.101,2982\x0a200,J.\x20Headley,Huddersfield\x20Town,21,0.687,0.296,0.084,0.548,0.802,0.597,0.768,2980\x0a201,B.\x20Schmitz,Köln,28,0.594,0.381,0.990,0.691,0.368,0.371,0.424,2979\x0a202,N.\x20Miroshi,Zulte-Waregem,20,0.907,0.217,0.979,0.953,0.351,0.787,0.178,2978\x0a203,T.\x20Hume,Sunderland,21,0.248,0.129,0.372,0.928,0.711,0.402,0.195,2978\x0a204,F.\x20Moufi,Portimonense,27,0.565,0.540,0.244,0.386,0.484,0.914,0.195,2974\x0a205,P.\x20Pomer,Ried,25,0.663,0.808,0.551,0.326,0.659,0.633,0.406,2974\x0a206,Carlos\x20Clerc,Elche,31,0.191,0.296,0.508,0.650,0.503,0.286,0.474,2973\x0a207,M.\x20Sykes,Bristol\x20City,25,0.283,0.678,0.161,0.322,0.170,0.171,0.480,2967\x0a208,P.\x20Mwene,PSV,29,0.662,0.608,0.261,0.507,0.764,0.245,0.565,2962\x0a209,J.\x20Lotomba,Nice,24,0.111,0.064,0.176,0.570,0.407,0.336,0.889,2962\x0a210,T.\x20Malacia,Man\x20United,23,0.845,0.296,0.225,0.868,0.302,0.137,0.450,2959\x0a211,K.\x20Sildillia,Freiburg,21,0.089,0.129,0.214,0.430,0.426,0.473,0.093,2958\x0a212,D.\x20Hashioka,Sint-Truiden,24,0.274,0.775,0.339,0.743,0.614,0.899,0.503,2958\x0a213,D.\x20Udogie,Udinese,20,0.206,0.381,0.035,0.210,0.526,0.664,0.949,2954\x0a214,M.\x20Romeo,Cardiff\x20City,27,0.078,0.217,0.537,0.185,0.017,0.274,0.830,2951\x0a215,Vanderson,Monaco,21,0.242,0.608,0.873,0.883,0.448,0.504,0.591,2950\x0a216,Reinildo\x20Mandava,Atlético\x20Madrid,29,0.277,0.129,0.221,0.606,0.807,0.926,0.372,2945\x0a217,Brian\x20Oliván,Espanyol,29,0.783,0.608,0.574,0.290,0.413,0.119,0.117,2941\x0a218,M.\x20Weiser,Werder\x20Bremen,29,0.945,0.905,0.691,0.495,0.329,0.272,0.597,2935\x0a219,M.\x20Wittek,Vitesse,27,0.581,0.966,0.723,0.539,0.260,0.766,0.316,2934\x0a220,Cláudio\x20Winck,Marítimo,29,0.149,0.381,0.672,0.362,0.319,0.708,0.852,2931\x0a221,C.\x20Trimmel,Union\x20Berlin,36,0.603,0.966,0.802,0.326,0.730,0.932,0.456,2919\x0a222,Joãozinho,Estoril,33,0.245,0.217,0.563,0.166,0.416,0.599,0.074,2915\x0a223,F.\x20Sacko,Montpellier,28,0.038,0.026,0.198,0.585,0.509,0.255,0.456,2912\x0a224,M.\x20Léris,Sampdoria,25,0.465,0.296,0.060,0.322,0.346,0.629,0.544,2902\x0a225,R.\x20Kristensen,Leeds\x20United,25,0.106,0.064,0.822,0.659,0.591,0.785,0.005,2901\x0a226,R.\x20Bensebaini,Borussia\x20M\x27gladbach,28,0.111,0.064,0.719,0.450,0.195,0.885,0.265,2900\x0a227,L.\x20Sernicola,Cremonese,25,0.909,0.608,0.249,0.456,0.670,0.773,0.634,2897\x0a228,M.\x20Youssouf,Ajaccio,35,0.240,0.064,0.701,0.896,0.636,0.789,0.221,2893\x0a229,C.\x20Arcus,Vitesse,26,0.432,0.381,0.629,0.783,0.624,0.916,0.338,2892\x0a230,J.\x20Toljan,Sassuolo,28,0.715,0.064,0.664,0.146,0.559,0.154,0.430,2891\x0a231,Jaume\x20Costa,Mallorca,35,0.845,0.608,0.185,0.063,0.332,0.526,0.538,2890\x0a232,J.\x20Duverne,Brest,25,0.253,0.064,0.940,0.539,0.739,0.792,0.696,2886\x0a233,Tiago\x20Santos,Estoril,20,0.551,0.808,0.211,0.561,0.854,0.462,0.873,2880\x0a234,J.\x20Lelieveld,RKC\x20Waalwijk,25,0.257,0.296,0.487,0.456,0.398,0.345,0.108,2866\x0a235,H.\x20Kamara,Watford,29,0.546,0.540,0.774,0.901,0.830,0.564,0.922,2861\x0a236,J.\x20Davidson,Eupen,31,0.465,0.064,0.996,0.653,0.530,0.466,0.456,2857\x0a237,L.\x20Coyle,Hull\x20City,27,0.953,0.608,0.779,0.521,0.230,0.242,0.738,2850\x0a238,S.\x20Klaiber,Utrecht,28,0.858,0.728,0.954,0.971,0.629,0.714,0.544,2850\x0a239,Y.\x20Sabaly,Real\x20Betis,30,0.570,0.129,0.240,0.490,0.427,0.225,0.650,2850\x0a240,J.\x20Eccles,Coventry\x20City,23,0.102,0.381,0.333,0.881,0.366,0.402,0.225,2848\x0a241,S.\x20Sambo,Sparta\x20Rotterdam,21,0.606,0.064,0.349,0.764,0.371,0.839,0.309,2844\x0a242,T.\x20Sakamoto,Oostende,26,0.632,0.941,0.157,0.735,0.772,0.538,0.644,2842\x0a243,J.\x20Rankin-Costello,Blackburn\x20Rovers,23,0.039,0.381,0.469,0.462,0.245,0.557,0.093,2842\x0a244,A.\x20Gallo,Lecce,23,0.927,0.129,0.898,0.430,0.837,0.358,0.480,2836\x0a245,Diego\x20Moreno,Osasuna,21,0.364,0.381,0.627,0.619,0.343,0.768,0.662,2827\x0a246,A.\x20Bangura,Cambuur,23,0.157,0.608,0.388,0.392,0.584,0.069,0.906,2826\x0a247,A.\x20Jung,Werder\x20Bremen,31,0.257,0.217,0.584,0.295,0.270,0.817,0.043,2825\x0a248,J.\x20Ruffels,Huddersfield\x20Town,29,0.625,0.064,0.377,0.295,0.144,0.701,0.129,2823\x0a249,Juan\x20Cruz,Osasuna,30,0.678,0.129,0.150,0.174,0.095,0.599,0.117,2823\x0a250,M.\x20van\x20der\x20Maarel,Utrecht,33,0.050,0.026,0.701,0.790,0.636,0.356,0.000,2823\x0a251,R.\x20Nyambe,Wigan\x20Athletic,25,0.003,0.001,0.099,0.944,0.930,0.598,0.278,2821\x0a252,O.\x20Zinchenko,Arsenal,26,0.369,0.217,0.832,0.343,0.757,0.906,0.852,2817\x0a253,A.\x20Doughty,Luton\x20Town,23,0.743,0.926,0.547,0.440,0.151,0.684,0.783,2809\x0a254,M.\x20Bakker,Bayer\x20Leverkusen,22,0.106,0.540,0.290,0.085,0.231,0.490,0.338,2805\x0a255,Lucas\x20Soares,Casa\x20Pia\x20AC,25,0.406,0.466,0.124,0.225,0.551,0.287,0.634,2799\x0a256,Miguel\x20Gutiérrez,Girona,21,0.495,0.466,0.270,0.167,0.332,0.247,0.565,2796\x0a257,A.\x20Wan-Bissaka,Man\x20United,25,0.136,0.466,0.055,0.781,0.698,0.338,0.624,2780\x0a258,M.\x20Olivera,Napoli,25,0.993,0.466,0.525,0.846,0.915,0.389,0.662,2773\x0a259,L.\x20Gooch,Sunderland,27,0.649,0.381,0.595,0.286,0.261,0.274,0.825,2768\x0a260,E.\x20Laird,Queens\x20Park\x20Rangers,21,0.048,0.296,0.072,0.397,0.883,0.760,0.952,2765\x0a261,Abner,Real\x20Betis,23,0.383,0.129,0.651,0.358,0.063,0.762,0.038,2757\x0a262,Leonardo\x20Lelo,Casa\x20Pia\x20AC,23,0.829,0.678,0.516,0.467,0.573,0.084,0.534,2745\x0a263,Miguel\x20Maga,Vitória\x20Guimarães,20,0.394,0.296,0.388,0.830,0.453,0.645,0.138,2744\x0a264,M.\x20Desler,Toulouse,28,0.312,0.217,0.427,0.830,0.749,0.909,0.603,2744\x0a265,Renan\x20Lodi,Nottingham\x20Forest,25,0.209,0.296,0.134,0.714,0.112,0.191,0.187,2739\x0a266,G.\x20Montiel,Sevilla,26,0.461,0.678,0.377,0.299,0.356,0.274,0.573,2736\x0a267,Vitinho,Burnley,23,0.292,0.381,0.029,0.120,0.106,0.291,0.822,2735\x0a268,M.\x20Plattenhardt,Hertha\x20BSC,31,0.129,0.728,0.448,0.200,0.735,0.450,0.040,2722\x0a269,A.\x20Truffert,Rennes,21,0.715,0.540,0.610,0.826,0.499,0.907,0.527,2707\x0a270,H.\x20Clarke,Ipswich\x20Town,22,0.027,0.540,0.803,0.247,0.042,0.774,0.952,2706\x0a271,G.\x20Mensah,Auxerre,24,0.315,0.129,0.846,0.864,0.769,0.804,0.601,2706\x0a272,P.\x20Joly,Dijon,22,0.423,0.296,0.922,0.997,0.775,0.433,0.777,2701\x0a273,B.\x20Reynolds,Westerlo,21,0.967,0.608,0.493,0.561,0.560,0.812,0.668,2700\x0a274,Kiki,Vizela,28,0.393,0.296,0.880,0.684,0.184,0.634,0.129,2697\x0a275,Diego\x20Rico,Real\x20Sociedad,30,0.157,0.129,0.876,0.273,0.010,0.889,0.333,2697\x0a276,T.\x20Lutonda,RKC\x20Waalwijk,22,0.627,0.381,0.305,0.883,0.337,0.349,0.183,2691\x0a277,Manu\x20Sánchez,Osasuna,22,0.969,0.728,0.385,0.743,0.492,0.285,0.303,2691\x0a278,Q.\x20Hartman,Feyenoord,21,0.349,0.540,0.812,0.661,0.960,0.762,0.534,2687\x0a279,Anderson,Austria\x20Lustenau,25,0.460,0.886,0.393,0.846,0.520,0.785,0.474,2679\x0a280,W.\x20Singo,Torino,22,0.893,0.728,0.469,0.031,0.018,0.930,0.611,2654\x0a281,M.\x20Lazzari,Lazio,29,0.295,0.217,0.025,0.080,0.465,0.170,0.997,2643\x0a282,M.\x20Seck,Portimonense,27,0.257,0.540,0.206,0.432,0.294,0.552,0.513,2641\x0a283,J.\x20Ward,Crystal\x20Palace,33,0.525,0.026,0.457,0.486,0.671,0.892,0.033,2638\x0a284,Emerson\x20Palmieri,West\x20Ham,28,0.211,0.540,0.362,0.112,0.490,0.584,0.809,2638\x0a285,K.\x20Amian,Spezia,25,0.687,0.381,0.448,0.697,0.312,0.247,0.513,2634\x0a286,Juan\x20Iglesias,Getafe,24,0.615,0.217,0.255,0.914,0.270,0.383,0.108,2631\x0a287,Emerson\x20Royal,Tottenham,24,0.196,0.129,0.403,0.638,0.760,0.509,0.456,2617\x0a288,J.\x20Scally,Borussia\x20M\x27gladbach,20,0.834,0.217,0.432,0.093,0.565,0.868,0.249,2611\x0a289,Ivo\x20Pinto,Fortuna\x20Sittard,33,0.399,0.466,0.856,0.585,0.881,0.775,0.911,2608\x0a290,J.\x20Veltman,Brighton,31,0.687,0.064,0.764,0.414,0.496,0.722,0.309,2608\x0a291,S.\x20Widmer,Mainz\x2005,30,0.875,0.808,0.456,0.355,0.410,0.380,0.178,2605\x0a292,M.\x20Lowe,Sheffield\x20United,26,0.512,0.381,0.277,0.735,0.475,0.782,0.070,2602\x0a293,J.\x20Husband,Blackpool,29,0.286,0.129,0.760,0.542,0.526,0.875,0.240,2601\x0a294,G.\x20Kalulu,Lorient,25,0.081,0.129,0.513,0.719,0.745,0.503,0.685,2598\x0a295,D.\x20Lazović,Hellas\x20Verona,32,0.822,0.961,0.377,0.004,0.719,0.038,0.525,2596\x0a296,L.\x20Kübler,Freiburg,30,0.453,0.026,0.601,0.775,0.717,0.978,0.097,2587\x0a297,P.\x20Struijk,Leeds\x20United,23,0.663,0.001,0.414,0.914,0.869,0.869,0.149,2577\x0a298,H.\x20Guenouche,Austria\x20Lustenau,23,0.012,0.678,0.760,0.927,0.487,0.214,0.859,2572\x0a299,Aitor\x20Ruibal,Real\x20Betis,27,0.413,0.678,0.568,0.739,0.213,0.405,0.696,2569\x0a300,F.\x20Centonze,Nantes,27,0.367,0.381,0.738,0.678,0.319,0.890,0.629,2568\x0a301,Nuno\x20Mendes,PSG,20,0.354,0.842,0.093,0.435,0.440,0.662,0.743,2567\x0a302,D.\x20van\x20Wageningen,Sparta\x20Rotterdam,20,0.149,0.608,0.829,0.619,0.535,0.119,0.936,2558\x0a303,R.\x20Perraud,Southampton,25,0.523,0.540,0.329,0.695,0.674,0.108,0.474,2558\x0a304,Carraça,Gil\x20Vicente,30,0.462,0.775,0.852,0.231,0.265,0.649,0.057,2558\x0a305,J.\x20Kenny,Hertha\x20BSC,26,0.364,0.296,0.808,0.638,0.234,0.842,0.138,2554\x0a306,W.\x20Kamanzi,Toulouse,22,0.231,0.608,0.038,0.311,0.666,0.010,0.966,2552\x0a307,C.\x20Brunner,Schalke\x2004,29,0.956,0.466,0.407,0.755,0.308,0.593,0.155,2549\x0a308,Y.\x20Van\x20Genechten,Eupen,22,0.557,0.129,0.228,0.817,0.086,0.662,0.320,2548\x0a309,Z.\x20Çelik,Roma,26,0.671,0.466,0.764,0.772,0.822,0.435,0.372,2548\x0a310,G.\x20Tanner,Bristol\x20City,23,0.131,0.217,0.478,0.611,0.584,0.728,0.320,2543\x0a311,K.\x20D\x27Haene,Kortrijk,32,0.768,0.775,0.834,0.057,0.008,0.018,0.138,2542\x0a312,F.\x20Depaoli,Hellas\x20Verona,26,0.936,0.217,0.206,0.167,0.201,0.159,0.086,2539\x0a313,Juan\x20Miranda,Real\x20Betis,23,0.632,0.808,0.634,0.619,0.127,0.590,0.424,2528\x0a314,Sergio\x20Akieme,Almería,25,0.702,0.296,0.151,0.108,0.952,0.385,0.679,2524\x0a315,J.\x20Allevinah,Clermont,28,0.166,0.728,0.005,0.125,0.563,0.172,0.885,2523\x0a316,M.\x20Simakan,RB\x20Leipzig,23,0.963,0.864,0.845,0.292,0.538,0.963,0.573,2522\x0a317,S.\x20Walsh,Mechelen,28,0.039,0.026,0.339,0.187,0.217,0.202,0.025,2518\x0a318,M.\x20Cash,Aston\x20Villa,25,0.723,0.026,0.266,0.783,0.236,0.742,0.469,2516\x0a319,L.\x20Ayling,Leeds\x20United,31,0.305,0.217,0.751,0.941,0.962,0.295,0.078,2514\x0a320,J.\x20Foyth,Villarreal,25,0.971,0.129,0.642,0.851,0.650,0.944,0.819,2482\x0a321,A.\x20Skov\x20Olsen,Club\x20Brugge,23,0.680,0.961,0.171,0.001,0.038,0.069,0.990,2481\x0a322,Afonso\x20Freitas,Vitória\x20Guimarães,23,0.457,0.064,0.273,0.047,0.218,0.405,0.465,2478\x0a323,A.\x20Cambiaso,Bologna,23,0.145,0.540,0.295,0.773,0.414,0.025,0.749,2476\x0a324,D.\x20Blind,Bayern\x20München,33,0.768,0.381,1.000,0.193,0.689,0.674,0.383,2473\x0a325,D.\x20Machado,Lens,29,0.829,0.540,0.018,0.189,0.815,0.059,0.591,2473\x0a326,M.\x20Bouchouari,Emmen,22,0.127,0.608,0.416,0.893,0.362,0.264,0.787,2471\x0a327,Jordi\x20Alba,Barcelona,34,0.590,0.953,0.988,0.258,0.846,0.191,0.383,2470\x0a328,A.\x20Young,Aston\x20Villa,37,0.715,0.217,0.839,0.582,0.166,0.599,0.527,2468\x0a329,B.\x20Plat,Volendam,23,0.111,0.001,0.054,0.993,0.839,0.691,0.030,2467\x0a330,Iza\x20Carcelén,Cádiz,30,0.465,0.381,0.179,0.807,0.708,0.211,0.211,2467\x0a331,S.\x20El\x20Shaarawy,Roma,30,0.889,0.678,0.161,0.004,0.178,0.704,0.974,2464\x0a332,R.\x20Brady,Preston\x20North\x20End,31,0.567,0.990,0.948,0.364,0.022,0.527,0.650,2462\x0a333,A.\x20Hickey,Brentford,20,0.081,0.026,0.039,0.555,0.808,0.117,0.338,2458\x0a334,N.\x20Tjoe-A-On,Excelsior,21,0.783,0.296,0.624,0.979,0.572,0.390,0.278,2458\x0a335,S.\x20Aurier,Nottingham\x20Forest,30,0.812,0.129,0.303,0.987,0.923,0.830,0.048,2457\x0a336,D.\x20Calabria,Milan,26,0.970,0.217,0.883,0.709,0.307,0.736,0.211,2452\x0a337,D.\x20Bradarić,Salernitana,23,0.594,0.296,0.132,0.067,0.794,0.213,0.725,2448\x0a338,T.\x20Weah,Lille,23,0.153,0.466,0.067,0.021,0.140,0.309,0.909,2436\x0a339,R.\x20Charles-Cook,Eupen,26,0.501,0.540,0.014,0.163,0.416,0.038,0.945,2434\x0a340,J.\x20Sánchez,Ajax,25,0.162,0.381,0.247,0.906,0.218,0.521,0.125,2431\x0a341,Alex\x20Telles,Sevilla,30,0.987,0.466,0.338,0.268,0.392,0.768,0.074,2430\x0a342,G.\x20Cox,Fortuna\x20Sittard,25,0.211,0.466,0.311,0.672,0.475,0.504,0.178,2419\x0a343,A.\x20Danté,Sturm\x20Graz,22,0.465,0.466,0.932,0.961,0.715,0.983,0.420,2419\x0a344,R.\x20James,Chelsea,23,0.573,0.864,0.672,0.242,0.762,0.640,0.629,2414\x0a345,M.\x20Poaty,RFC\x20Seraing,25,0.339,0.296,0.672,0.278,0.319,0.322,0.971,2414\x0a346,Hugo\x20Mallo,Celta\x20de\x20Vigo,31,0.330,0.608,0.828,0.638,0.264,0.668,0.052,2414\x0a347,C.\x20Wernitznig,Austria\x20Klagenfurt,33,0.141,0.864,0.911,0.762,0.093,0.640,0.513,2413\x0a348,M.\x20N\x27Diaye,Anderlecht,20,0.257,0.129,0.231,0.864,0.984,0.825,0.920,2404\x0a349,A.\x20Caci,Mainz\x2005,25,0.723,0.808,0.941,0.854,0.973,0.091,0.108,2401\x0a350,M.\x20Braida,San\x20Lorenzo,26,0.873,0.608,0.593,0.834,0.890,0.527,0.725,2400\x0a351,D.\x20Sterling,Stoke\x20City,23,0.046,0.000,0.289,0.427,0.859,0.531,0.725,2392\x0a352,A.\x20Reca,Spezia,27,0.614,0.886,0.866,0.167,0.319,0.201,0.896,2391\x0a353,João\x20Mário,Porto,23,0.721,0.961,0.311,0.148,0.029,0.416,0.888,2390\x0a354,Aritz\x20Elustondo,Real\x20Sociedad,29,0.217,0.381,0.452,0.473,0.580,0.482,0.230,2387\x0a355,Marc\x20Cucurella,Chelsea,24,0.311,0.381,0.516,0.977,0.974,0.684,0.349,2371\x0a356,Paulo\x20Otávio,Wolfsburg,28,0.845,0.608,0.726,0.939,0.927,0.311,0.443,2362\x0a357,A.\x20Ciranni,Zulte-Waregem,26,0.569,0.775,0.728,0.507,0.065,0.115,0.155,2360\x0a358,D.\x20Schnegg,Sturm\x20Graz,24,0.108,0.808,0.897,0.868,0.235,0.957,0.706,2357\x0a359,Mário\x20Rui,Napoli,32,0.879,0.905,0.993,0.176,0.651,0.172,0.777,2354\x0a360,Thierry\x20Correia,Valencia,24,0.646,0.064,0.825,0.819,0.688,0.850,0.672,2348\x0a361,I.\x20Diallo,Ajaccio,26,0.067,0.026,0.398,0.406,0.542,0.710,0.249,2347\x0a362,Andoni\x20Gorosabel,Real\x20Sociedad,26,0.783,0.381,0.333,0.332,0.773,0.249,0.372,2344\x0a363,A.\x20Jašić,Wolfsberger\x20AC,20,0.386,0.905,0.892,0.888,0.832,0.463,0.443,2343\x0a364,R.\x20Gumny,Augsburg,24,0.369,0.129,0.204,0.531,0.454,0.679,0.097,2342\x0a365,F.\x20Mendy,Real\x20Madrid,27,0.783,0.217,0.052,0.025,0.023,0.542,0.383,2331\x0a366,Q.\x20Bernard,Niort,33,0.228,0.217,0.958,0.822,0.649,0.809,0.014,2325\x0a367,César\x20Azpilicueta,Chelsea,33,0.903,0.540,0.743,0.633,0.598,0.599,0.439,2315\x0a368,M.\x20Fossey,Standard\x20Liège,24,0.702,0.381,0.430,0.529,0.909,0.218,0.629,2307\x0a369,C.\x20Elder,Hull\x20City,28,0.291,0.608,0.324,0.727,0.474,0.799,0.480,2302\x0a370,Danilo\x20Veiga,Rijeka,20,0.465,0.217,0.516,0.719,0.401,0.637,0.768,2292\x0a371,Clinton\x20Mata,Club\x20Brugge,30,0.936,0.608,0.789,0.731,0.248,0.854,0.644,2290\x0a372,Q.\x20Merlin,Nantes,21,0.356,0.953,0.923,0.418,0.369,0.405,0.679,2289\x0a373,Fábio\x20Ronaldo,Rio\x20Ave,22,0.911,0.540,0.040,0.068,0.205,0.236,0.872,2289\x0a374,T.\x20Baldé,Troyes,20,0.206,0.217,0.051,0.110,0.546,0.101,0.906,2284\x0a375,L.\x20Kelly,Bournemouth,24,0.996,0.001,0.482,0.593,0.954,0.775,0.001,2278\x0a376,N.\x20Foor,Cambuur,31,0.871,0.775,0.977,0.137,0.278,0.003,0.792,2277\x0a377,M.\x20Moreira,Austria\x20Klagenfurt,28,0.465,0.026,0.612,0.809,0.903,0.986,0.333,2266\x0a378,C.\x20Christie,Hull\x20City,30,0.394,0.296,0.526,0.448,0.290,0.740,0.881,2259\x0a379,N.\x20Veratschnig,Wolfsberger\x20AC,20,0.465,0.296,0.228,0.829,0.851,0.196,0.303,2258\x0a380,T.\x20Foket,Reims,28,0.803,0.608,0.469,0.585,0.381,0.381,0.634,2256\x0a381,Z.\x20Sanusi,Porto,25,0.783,0.381,0.324,0.244,0.356,0.800,0.415,2251\x0a382,B.\x20Chilwell,Chelsea,26,0.561,0.886,0.231,0.038,0.064,0.266,0.813,2250\x0a383,A.\x20Ulmer,Salzburg,37,0.681,0.728,0.945,0.859,0.836,0.405,0.117,2239\x0a384,Aarón\x20Martín,Mainz\x2005,26,0.845,0.905,0.693,0.034,0.283,0.050,0.243,2230\x0a385,D.\x20Thompson,Blackpool,22,0.954,0.129,0.860,0.727,0.440,0.903,0.560,2229\x0a386,L.\x20Abanda,Lamia,22,0.582,0.678,0.624,0.380,0.629,0.888,0.195,2227\x0a387,K.\x20Nkuba,Charleroi,21,0.672,0.886,0.043,0.341,0.388,0.570,0.881,2223\x0a388,M.\x20Halstenberg,RB\x20Leipzig,31,0.869,0.466,0.646,0.409,0.894,0.932,0.084,2221\x0a389,Juan\x20Bernat,PSG,30,0.172,0.678,0.017,0.020,0.473,0.232,0.195,2218\x0a390,Aihen\x20Muñoz,Real\x20Sociedad,25,0.739,0.296,0.219,0.371,0.210,0.742,0.585,2218\x0a391,P.\x20Stojanović,Empoli,27,0.217,0.217,0.798,0.367,0.167,0.119,0.839,2217\x0a392,A.\x20van\x20Hoorenbeeck,Mechelen,24,0.935,0.064,0.798,0.748,0.856,0.837,0.230,2216\x0a393,J.\x20Mansoni,RFC\x20Seraing,26,0.131,0.381,0.131,0.916,0.526,0.664,0.856,2210\x0a394,H.\x20Matriciani,Schalke\x2004,23,0.157,0.026,0.161,0.922,0.672,0.334,0.021,2209\x0a395,B.\x20Bereszyński,Napoli,30,0.197,0.129,0.266,0.735,0.043,0.961,0.316,2202\x0a396,Ricardo\x20Esgaio,Sporting\x20CP,30,0.073,0.466,0.407,0.409,0.548,0.581,0.205,2201\x0a397,C.\x20Drameh,Luton\x20Town,21,0.285,0.808,0.663,0.893,0.851,0.300,0.544,2201\x0a398,A.\x20Zedadka,Auxerre,28,0.748,0.381,0.064,0.628,0.197,0.346,0.573,2197\x0a399,B.\x20Meling,Rennes,28,0.369,0.296,0.548,0.734,0.633,0.482,0.731,2197\x0a400,H.\x20Mendyl,OH\x20Leuven,25,0.557,0.678,0.154,0.483,0.056,0.599,0.679,2193\x0a401,C.\x20Styles,Millwall,23,0.430,0.381,0.069,0.137,0.176,0.081,0.415,2192\x0a402,D.\x20Foulquier,Valencia,30,0.726,0.217,0.385,0.219,0.578,0.430,0.829,2187\x0a403,T.\x20Schick,Rapid\x20Wien,33,0.952,0.988,0.941,0.249,0.056,0.708,0.298,2186\x0a404,M.\x20Vojvoda,Torino,28,0.988,0.728,0.983,0.061,0.394,0.154,0.389,2183\x0a405,Fran\x20Delgado,Betis\x20Deportivo,21,0.872,0.466,0.388,0.362,0.384,0.894,0.560,2181\x0a406,João\x20Correia,Chaves,26,0.435,0.678,0.540,0.247,0.076,0.142,0.513,2177\x0a407,T.\x20De\x20Smet,Reims,24,0.687,0.466,0.952,0.326,0.035,0.984,0.430,2153\x0a408,P.\x20Sagna,Santa\x20Clara,32,0.433,0.608,0.443,0.680,0.795,0.939,0.133,2145\x0a409,Mario\x20Gaspar,Watford,32,0.063,0.466,0.565,0.795,0.531,0.392,0.026,2138\x0a410,J.\x20Vagnoman,Stuttgart,22,0.014,0.608,0.009,0.074,0.747,0.324,0.149,2138\x0a411,G.\x20Benítez,Huracán,29,0.465,0.466,0.439,0.760,0.871,0.636,0.603,2126\x0a412,L.\x20Advíncula,Boca\x20Juniors,33,0.757,0.678,0.467,0.180,0.993,0.482,0.650,2118\x0a413,P.\x20Mazzocchi,Salernitana,27,0.655,0.466,0.103,0.087,0.181,0.146,0.948,2117\x0a414,Alejandro\x20Pozo,Almería,24,0.675,0.678,0.792,0.598,0.167,0.140,0.278,2111\x0a415,J.\x20Tymon,Stoke\x20City,24,0.465,0.941,0.787,0.012,0.005,0.038,0.762,2101\x0a416,B.\x20Johnson,West\x20Ham,23,0.817,0.129,0.664,0.380,0.930,0.680,0.166,2100\x0a417,S.\x20Kumbedi,Olympique\x20Lyonnais,18,0.090,0.466,0.134,0.854,0.341,0.013,0.700,2100\x0a418,D.\x20Suárez,Getafe,35,0.820,0.540,0.568,0.302,0.033,0.469,0.166,2100\x0a419,G.\x20Soto,Huracán,29,0.773,0.608,0.366,0.568,0.833,0.450,0.718,2094\x0a420,R.\x20Loftus-Cheek,Chelsea,27,0.067,0.381,0.076,0.099,0.899,0.735,0.850,2084\x0a421,S.\x20Coleman,Everton,34,0.418,0.217,0.366,0.633,0.820,0.599,0.101,2083\x0a422,B.\x20Kuipers,Go\x20Ahead\x20Eagles,28,0.877,0.808,0.620,0.409,0.076,0.772,0.328,2078\x0a423,T.\x20Ebuehi,Empoli,27,0.916,0.381,0.183,0.405,0.692,0.326,0.187,2075\x0a424,Danilo\x20Soares,Bochum,31,0.971,0.129,0.722,0.991,0.805,0.316,0.057,2071\x0a425,Ayrton\x20Lucas,Flamengo,25,0.783,0.217,0.359,0.204,0.563,0.717,0.792,2071\x0a426,N.\x20Clyne,Crystal\x20Palace,32,0.862,0.064,0.264,0.211,0.879,0.068,0.086,2069\x0a427,M.\x20Pedersen,Augsburg,26,0.394,0.217,0.047,0.548,0.577,0.030,0.359,2069\x0a428,A.\x20Soto,Defensa\x20y\x20Justicia,29,0.039,0.064,0.664,0.747,0.330,0.383,0.101,2068\x0a429,J.\x20Hato,Ajax,17,0.286,0.064,0.945,0.611,0.603,0.551,0.762,2067\x0a430,J.\x20Firpo,Leeds\x20United,26,0.971,0.466,0.578,0.952,0.586,0.510,0.270,2066\x0a431,R.\x20Gosens,Internazionale,29,0.193,0.728,0.369,0.450,0.586,0.644,0.270,2063\x0a432,Sergi\x20Roberto,Barcelona,31,0.687,0.540,0.074,0.094,0.154,0.290,0.672,2061\x0a433,N.\x20Mazraoui,Bayern\x20München,25,0.649,0.775,0.664,0.275,0.813,0.599,0.465,2058\x0a434,M.\x20Polster,Austria\x20Wien,20,0.085,0.775,0.134,0.773,0.514,0.349,0.672,2055\x0a435,S.\x20Doumbia,Angers\x20SCO,26,0.351,0.296,0.249,0.228,0.148,0.770,0.867,2045\x0a436,D.\x20Cirkin,Sunderland,21,0.021,0.026,0.123,0.514,0.946,0.238,0.601,2029\x0a437,E.\x20Longelo,Birmingham\x20City,22,0.574,0.678,0.185,0.470,0.883,0.089,0.918,2021\x0a438,Igor\x20Julião,Vizela,28,0.659,0.129,0.103,0.209,0.202,0.419,0.430,2018\x0a439,Iván\x20Fresneda,Real\x20Valladolid,18,0.217,0.608,0.235,0.852,0.371,0.274,0.692,2017\x0a440,J.\x20Mendes,Sporting\x20Braga,20,0.619,0.381,0.082,0.281,0.514,0.112,0.996,2011\x0a441,M.\x20Wolf,Borussia\x20Dortmund,28,0.277,0.540,0.832,0.432,0.399,0.087,0.903,2002\x0a442,Y.\x20Larouci,Troyes,22,0.577,0.296,0.161,0.193,0.597,0.918,0.819,1997\x0a443,Ismaily,Lille,33,0.687,0.678,0.427,0.580,0.722,0.758,0.491,1995\x0a444,M.\x20Anzolin,Wolfsberger\x20AC,22,0.805,0.540,0.812,0.336,0.850,0.349,0.166,1991\x0a445,P.\x20Kadeřábek,Hoffenheim,31,0.860,0.842,0.491,0.090,0.185,0.435,0.364,1983\x0a446,F.\x20Dabo,Coventry\x20City,27,0.273,0.064,0.603,0.663,0.709,0.375,0.503,1980\x0a447,M.\x20Richter,Hertha\x20BSC,25,0.319,0.608,0.305,0.653,0.394,0.026,0.295,1979\x0a448,D.\x20Schmidt,Cambuur,31,0.744,0.026,0.847,0.928,0.680,0.544,0.057,1968\x0a449,Alfonso\x20Pedraza,Villarreal,27,0.072,0.775,0.086,0.218,0.048,0.534,0.949,1966\x0a450,M.\x20Melluso,Gimnasia\x20La\x20Plata,24,0.949,0.540,0.695,1.000,0.967,0.727,0.372,1955\x0a451,K.\x20Tierney,Arsenal,25,0.739,0.129,0.824,0.358,0.440,0.136,0.700,1951\x0a452,A.\x20Sant\x27Anna,Defensa\x20y\x20Justicia,25,0.176,0.842,0.500,0.958,0.692,0.722,0.480,1950\x0a453,C.\x20Lenz,Eintracht\x20Frankfurt,28,0.232,0.905,0.416,0.778,0.623,0.405,0.491,1944\x0a454,I.\x20Jakobs,Monaco,23,0.111,0.842,0.329,0.072,0.392,0.948,0.565,1935\x0a455,Derick\x20Poloni,Casa\x20Pia\x20AC,29,0.535,0.466,0.089,0.559,0.151,0.119,0.287,1927\x0a456,L.\x20Godoy,Estudiantes,28,0.898,0.728,0.346,0.033,0.189,0.069,0.235,1920\x0a457,Iago,Augsburg,26,0.678,0.466,0.620,0.518,0.487,0.161,0.205,1916\x0a458,M.\x20Casco,River\x20Plate,35,0.995,0.608,0.982,0.290,0.845,0.935,0.211,1912\x0a459,M.\x20Sorinola,Swansea\x20City,22,0.022,0.064,0.000,0.238,0.056,0.007,0.253,1911\x0a460,N.\x20Guinness-Walker,Reading,23,0.567,0.296,0.243,0.394,0.197,0.430,0.394,1903\x0a461,J.\x20Mojica,Villarreal,30,0.369,0.678,0.482,0.252,0.855,0.745,0.830,1898\x0a462,K.\x20Sardella,Anderlecht,21,0.997,0.026,0.578,0.268,0.037,0.252,0.565,1889\x0a463,D.\x20Giannoulis,Norwich\x20City,27,0.453,0.540,0.879,0.957,0.863,0.388,0.619,1885\x0a464,G.\x20Benavídez,Talleres\x20Córdoba,27,0.916,0.129,0.726,0.648,0.735,0.332,0.221,1883\x0a465,A.\x20Knauff,Eintracht\x20Frankfurt,21,0.298,0.608,0.295,0.462,0.104,0.376,0.941,1878\x0a466,Aurélio\x20Buta,Eintracht\x20Frankfurt,26,0.631,0.842,0.258,0.512,0.470,0.268,0.787,1874\x0a467,A.\x20Maitland-Niles,Southampton,25,0.758,0.381,0.171,0.838,0.416,0.901,0.225,1869\x0a468,M.\x20Alphonse,Ajaccio,33,0.516,0.217,0.500,0.824,0.970,0.781,0.225,1869\x0a469,M.\x20López,Feyenoord,23,0.111,0.466,0.531,0.982,0.680,0.910,0.544,1867\x0a470,O.\x20\x20Wijndal,Ajax,23,0.149,0.678,0.491,0.098,0.491,0.521,0.603,1865\x0a471,L.\x20Rao-Lisoa,Angers\x20SCO,22,0.465,0.983,0.396,0.988,0.509,0.986,0.713,1862\x0a472,Gilberto,Benfica,30,0.449,0.886,0.850,0.611,0.838,0.514,0.992,1859\x0a473,Núrio\x20Fortuna,Gent,28,0.589,0.217,0.586,0.923,0.697,0.898,0.389,1849\x0a474,K.\x20Ehizibue,Udinese,27,0.334,0.064,0.108,0.670,0.354,0.825,0.450,1848\x0a475,L.\x20Di\x20Plácido,Botafogo,29,0.537,0.540,0.439,0.975,0.523,0.893,0.287,1843\x0a476,M.\x20Moormann,Rapid\x20Wien,22,0.958,0.381,0.963,0.352,0.431,0.573,0.155,1842\x0a477,I.\x20Abdulrazak,Anderlecht,21,0.217,0.381,0.461,0.531,0.252,0.399,0.768,1827\x0a478,G.\x20Ávila,Antwerp,21,0.051,0.129,0.920,0.906,0.685,0.850,0.270,1827\x0a479,A.\x20Baba,Reading,28,0.098,0.064,0.292,0.302,0.557,0.939,0.211,1826\x0a480,N.\x20Patterson,Everton,21,0.655,0.296,0.274,0.628,0.106,0.291,0.338,1823\x0a481,K.\x20Hoever,Wolverhampton,21,0.405,0.864,0.817,0.576,0.742,0.527,0.753,1818\x0a482,K.\x20Mbabu,Servette,28,0.879,0.966,0.847,0.796,0.496,0.974,0.876,1814\x0a483,A.\x20Alese,Sunderland,22,0.615,0.064,0.179,0.691,0.978,0.347,0.133,1813\x0a484,Tinga,Fortaleza,29,0.292,0.129,0.672,0.503,0.971,0.649,0.798,1813\x0a485,J.\x20Zemura,Bournemouth,23,0.307,0.466,0.112,0.715,0.121,0.385,0.828,1809\x0a486,H.\x20Siquet,Cercle\x20Brugge,20,0.706,0.997,0.731,0.748,0.593,0.492,0.117,1808\x0a487,S.\x20van\x20Wermeskerken,Cambuur,28,0.864,0.381,0.687,0.879,0.941,0.317,0.138,1808\x0a488,Sander,Goiás,32,0.415,0.808,0.791,0.650,0.880,0.828,0.359,1806\x0a489,E.\x20Jordanov,Westerlo,29,0.457,0.296,0.718,0.369,0.108,0.423,0.893,1799\x0a490,L.\x20Digne,Aston\x20Villa,29,0.868,0.381,0.477,0.346,0.298,0.954,0.187,1798\x0a491,I.\x20Rodríguez,Banfield,21,0.197,0.217,0.317,0.352,0.570,0.544,0.508,1790\x0a492,A.\x20Rodríguez,Rosario\x20Central,22,0.544,0.540,0.752,0.663,0.411,0.668,0.125,1788\x0a493,G.\x20Álvarez,Getafe,23,0.197,0.001,0.090,0.422,0.397,0.915,0.004,1785\x0a494,J.\x20Van\x20Hecke,Mechelen,21,0.834,0.129,0.362,0.802,0.612,0.063,0.309,1784\x0a495,J.\x20Dirksen,Emmen,20,0.941,0.129,0.590,0.966,0.552,0.525,0.008,1783\x0a496,N.\x20Sadiki,Anderlecht,18,0.971,0.466,0.576,0.684,0.704,0.106,0.749,1779\x0a497,N.\x20Gießelmann,Union\x20Berlin,31,0.721,0.808,0.629,0.148,0.055,0.877,0.029,1778\x0a498,E.\x20Díaz,River\x20Plate,27,0.991,0.217,0.739,0.704,0.768,0.443,0.424,1777\x0a499,M.\x20Koscelník,Rapid\x20Wien,28,0.128,0.608,0.903,0.667,0.478,0.599,0.619,1776\x0a500,R.\x20Jurišić,Ried,21,0.465,0.466,0.364,0.672,0.467,0.832,0.718,1769\x0a501,A.\x20Zanoli,Sampdoria,22,0.749,0.608,0.108,0.321,0.678,0.106,0.757,1768\x0a502,K.\x20Schindler,Köln,29,0.277,0.466,0.568,0.285,0.416,0.852,0.043,1765\x0a503,A.\x20Terzić,Fiorentina,23,0.940,0.978,0.944,0.148,0.986,0.965,0.930,1765\x0a504,S.\x20Ferguson,Rotherham\x20United,32,0.627,0.540,0.020,0.003,0.001,0.027,0.043,1763\x0a505,S.\x20Vines,Antwerp,23,0.783,0.678,0.661,0.050,0.783,0.184,0.195,1762\x0a506,F.\x20Gmeiner,Austria\x20Lustenau,26,0.401,0.466,0.640,0.531,0.256,0.055,0.253,1759\x0a507,B.\x20Locko,Brest,21,0.157,0.026,0.176,0.594,0.500,0.843,0.792,1757\x0a508,Dinis\x20Pinto,Sporting\x20Braga,22,0.086,0.466,0.708,0.192,0.360,0.359,0.406,1751\x0a509,D.\x20Liénard,Strasbourg,35,0.369,0.808,0.564,0.576,0.195,0.804,0.205,1750\x0a510,A.\x20Bruus,Troyes,24,0.644,0.381,0.171,0.027,0.101,0.017,0.496,1750\x0a511,G.\x20Rojas,Racing\x20Club,25,0.778,0.608,0.333,0.187,0.615,0.418,0.406,1749\x0a512,T.\x20Meunier,Borussia\x20Dortmund,31,0.594,0.775,0.935,0.495,0.146,0.362,0.731,1748\x0a513,J.\x20Bogle,Sheffield\x20United,22,0.131,0.466,0.352,0.333,0.218,0.555,0.936,1748\x0a514,T.\x20Cassandro,Lecce,23,0.232,0.064,0.893,0.450,0.916,0.274,0.078,1741\x0a515,Jonny\x20Otto,Wolverhampton,29,0.033,0.026,0.358,0.542,0.133,0.116,0.685,1740\x0a516,S.\x20Birindelli,Monza,23,0.663,0.775,0.393,0.551,0.171,0.038,0.617,1740\x0a517,M.\x20Orihuela,Atlético\x20Tucumán,31,0.809,0.381,0.245,0.456,0.236,0.477,0.298,1739\x0a518,Arthur\x20Gomes,Sporting\x20CP,24,0.074,0.864,0.042,0.013,0.603,0.064,0.962,1738\x0a519,Kiko\x20Femenía,Villarreal,32,0.037,0.217,0.414,0.214,0.659,0.877,0.749,1736\x0a520,S.\x20Iling-Junior,Juventus,19,0.886,0.842,0.222,0.274,0.119,0.564,0.738,1735\x0a521,R.\x20Aït\x20Nouri,Wolverhampton,21,0.418,0.540,0.355,0.619,0.727,0.539,0.856,1733\x0a522,Malo\x20Gusto,Olympique\x20Lyonnais,20,0.713,0.926,0.973,0.790,0.282,0.187,0.922,1732\x0a523,D.\x20Payne,Volendam,20,0.879,0.296,0.769,0.960,0.999,0.095,0.668,1731\x0a524,M.\x20Novak,Wolfsberger\x20AC,32,0.242,0.064,0.916,0.680,0.347,0.469,0.030,1727\x0a525,Vitor\x20Jacaré,Bahia,23,0.728,0.842,0.457,0.628,0.704,0.149,0.439,1717\x0a526,G.\x20Kastanos,Salernitana,25,0.949,0.217,0.125,0.084,0.046,0.488,0.454,1716\x0a527,K.\x20Tsimikas,Liverpool,27,0.534,0.953,0.463,0.526,0.458,0.578,0.480,1715\x0a528,K.\x20Çalhanoğlu,Sandhausen,20,0.337,0.953,0.805,0.876,0.521,0.141,0.903,1711\x0a529,C.\x20Gamboa,Bochum,33,0.774,0.064,0.907,0.645,0.480,0.854,0.033,1710\x0a530,S.\x20Malone,Millwall,32,0.582,0.886,0.500,0.371,0.846,0.179,0.108,1704\x0a531,J.\x20Hadjam,Nantes,20,0.171,0.129,0.568,0.768,0.798,0.745,0.930,1697\x0a532,G.\x20Kyriakopoulos,Bologna,27,0.825,0.808,0.755,0.219,0.388,0.108,0.864,1694\x0a533,Rodrigo\x20Conceição,Porto,23,0.325,0.808,0.188,0.516,0.129,0.197,0.957,1694\x0a534,D.\x20Martínez,Rosario\x20Central,33,0.057,0.217,0.115,0.371,0.283,0.360,0.192,1693\x0a535,Hugo\x20Bueno,Wolverhampton,20,0.426,0.808,0.080,0.606,0.753,0.722,0.926,1692\x0a536,N.\x20Kasanwirjo,Feyenoord,21,0.097,0.064,0.512,0.890,0.428,0.760,0.456,1689\x0a537,Alberto\x20Moreno,Villarreal,30,0.446,0.296,0.255,0.264,0.445,0.312,0.813,1686\x0a538,N.\x20Fernández\x20Mercau,Elche,23,0.924,0.808,0.795,0.799,0.416,0.005,0.757,1682\x0a539,D.\x20Faraoni,Hellas\x20Verona,31,0.768,0.217,0.453,0.389,0.175,0.119,0.010,1681\x0a540,O.\x20Sych,Kortrijk,22,0.829,0.381,0.313,0.838,0.565,0.858,0.597,1677\x0a541,K.\x20Lala,Brest,31,0.922,0.608,0.636,0.409,0.315,0.255,0.170,1676\x0a542,Raúl\x20Parra,Cádiz,23,0.629,0.381,0.691,0.074,0.012,0.202,0.187,1675\x0a543,Sergio\x20Escudero,Real\x20Valladolid,33,0.172,0.608,0.333,0.820,0.300,0.790,0.270,1670\x0a544,L.\x20Arce,Godoy\x20Cruz,25,0.774,0.678,0.839,0.883,0.892,0.648,0.474,1668\x0a545,T.\x20Gardner-Hickman,WBA,21,0.971,0.678,0.460,0.319,0.624,0.599,0.539,1661\x0a546,R.\x20Skov,Hoffenheim,27,0.555,0.926,0.640,0.132,0.403,0.504,0.480,1660\x0a547,L.\x20Thomas,Leicester\x20City,21,0.080,0.129,0.646,0.802,0.027,0.225,0.205,1655\x0a548,B.\x20Blasi,Central\x20Córdoba\x20SdE,27,0.178,0.001,0.760,0.509,0.068,0.238,0.026,1651\x0a549,Lucas\x20Vázquez,Real\x20Madrid,31,0.612,0.728,0.384,0.174,0.500,0.000,0.580,1650\x0a550,Samuel\x20Xavier,Fluminense,32,0.242,0.678,0.530,0.117,0.227,0.018,0.544,1649\x0a551,F.\x20Ortega,Vélez\x20Sarsfield,24,0.217,0.129,0.424,0.691,0.946,0.540,0.757,1640\x0a552,J.\x20Cabrera,Argentinos\x20Juniors,31,0.905,1.000,0.516,0.018,0.568,0.137,0.328,1639\x0a553,C.\x20Brittain,Blackburn\x20Rovers,25,0.136,0.296,0.315,0.815,0.723,0.366,0.783,1635\x0a554,E.\x20Sobol,Strasbourg,28,0.111,0.466,0.279,0.380,0.996,0.980,0.315,1628\x0a555,R.\x20Lewis,Man\x20City,18,0.343,0.296,0.046,0.046,0.247,0.038,0.560,1627\x0a556,A.\x20Preciado,Genk,25,0.615,0.775,0.535,0.732,0.070,0.965,0.762,1627\x0a557,H.\x20Hateboer,Atalanta,29,0.941,0.466,0.204,0.257,0.594,0.860,0.067,1617\x0a558,L.\x20Olaza,Real\x20Valladolid,28,0.554,0.381,0.258,0.106,0.560,0.559,0.043,1615\x0a559,J.\x20Tchatchoua,Charleroi,21,0.204,0.905,0.033,0.313,0.539,0.366,0.873,1613\x0a560,Nanú,Santa\x20Clara,28,0.298,0.381,0.132,0.163,0.683,0.817,0.415,1610\x0a561,A.\x20Spörle,Arsenal,27,0.095,0.026,0.679,0.841,0.945,0.325,0.773,1608\x0a562,A.\x20Costa,Independiente,23,0.749,0.466,0.420,0.963,0.930,0.979,0.372,1607\x0a563,J.\x20Dina\x20Ebimbe,Eintracht\x20Frankfurt,22,0.834,0.678,0.234,0.709,0.961,0.684,0.881,1601\x0a564,T.\x20Tomiyasu,Arsenal,24,0.663,0.064,0.567,0.415,0.936,0.544,0.048,1598\x0a565,N.\x20Cozza,Wolfsburg,24,0.166,0.129,0.490,0.474,0.966,0.599,0.320,1597\x0a566,E.\x20Holm,Spezia,22,0.217,0.540,0.048,0.478,0.157,0.520,0.757,1593\x0a567,Rúben\x20Lima,Famalicão,33,0.513,0.296,0.651,0.872,0.236,0.923,0.064,1592\x0a568,B.\x20Pittón,Newell\x27s\x20Old\x20Boys,30,0.582,0.296,0.715,0.598,0.684,0.349,0.320,1592\x0a569,D.\x20Zappacosta,Atalanta,30,0.166,0.129,0.198,0.275,0.765,0.038,0.910,1587\x0a570,Íñigo\x20Lekue,Athletic\x20Bilbao,30,0.232,0.381,0.704,0.302,0.034,0.820,0.491,1585\x0a571,Rubén\x20Peña,Osasuna,31,0.805,0.608,0.719,0.757,0.129,0.362,0.745,1583\x0a572,João\x20Moutinho,Spezia,25,0.730,0.540,0.961,0.292,0.080,0.950,0.303,1576\x0a573,Alexsander,Fluminense,19,0.148,0.381,0.057,0.537,0.253,0.492,0.768,1573\x0a574,Juninho\x20Capixaba,Red\x20Bull\x20Bragantino,25,0.594,0.540,0.962,0.974,0.103,0.948,0.430,1569\x0a575,F.\x20Guilbert,Strasbourg,28,0.074,0.064,0.372,0.980,0.906,0.718,0.364,1566\x0a576,L.\x20Venuti,Fiorentina,28,0.841,0.217,0.469,0.191,0.431,0.564,0.503,1564\x0a577,Paulo\x20Henrique,Santa\x20Clara,26,0.632,0.129,0.742,0.281,0.029,0.886,0.145,1563\x0a578,Hélder\x20Sá,Vitória\x20Guimarães,20,0.505,0.678,0.740,0.568,0.704,0.197,0.619,1563\x0a579,D.\x20Abels,Sparta\x20Rotterdam,25,0.426,0.217,0.443,0.479,0.355,0.794,0.175,1562\x0a580,L.\x20Burnet,Emmen,32,0.465,0.026,0.279,0.842,0.753,0.094,0.175,1561\x0a581,F.\x20Máter,Barracas\x20Central,24,0.971,0.064,0.161,0.815,0.461,0.202,0.662,1559\x0a582,I.\x20Kaboré,Olympique\x20Marseille,22,0.286,0.217,0.142,0.317,0.406,0.242,0.928,1556\x0a583,S.\x20Montiel,Argentinos\x20Juniors,22,0.531,0.775,0.146,0.490,0.470,0.008,0.443,1555\x0a584,A.\x20Lutovac,Ried,25,0.245,0.608,0.080,0.121,0.222,0.252,0.368,1554\x0a585,Óscar\x20Mingueza,Celta\x20de\x20Vigo,24,0.655,0.466,0.867,0.416,0.939,0.069,0.573,1554\x0a586,O.\x20Kakay,Queens\x20Park\x20Rangers,25,0.885,0.296,0.322,0.336,0.875,0.445,0.634,1551\x0a587,J.\x20Le\x20Cardinal,Lens,25,0.465,0.775,0.695,0.943,0.316,0.877,0.715,1551\x0a588,J.\x20Graham,Birmingham\x20City,28,0.381,0.966,0.339,0.402,0.091,0.555,0.634,1550\x0a589,J.\x20Lawrence-Gabriel,Blackpool,24,0.197,0.296,0.121,0.637,0.214,0.653,0.183,1539\x0a590,S.\x20Corchia,Nantes,32,0.054,0.296,0.214,0.619,0.084,0.512,0.523,1536\x0a591,F.\x20Mura,Racing\x20Club,24,0.257,0.540,0.710,0.608,0.509,0.016,0.155,1532\x0a592,M.\x20Pearson,Huddersfield\x20Town,29,0.257,0.001,0.319,0.542,0.098,0.500,0.001,1527\x0a593,C.\x20Terho,Union\x20Saint-Gilloise,19,0.111,0.842,0.068,0.035,0.021,0.065,0.869,1525\x0a594,V.\x20Lazaro,Torino,27,0.910,0.926,0.883,0.017,0.004,0.372,0.661,1513\x0a595,José\x20Fontán,Go\x20Ahead\x20Eagles,23,0.178,0.217,0.933,0.561,0.433,0.486,0.162,1507\x0a596,D.\x20Kreiker,Austria\x20Wien,20,0.009,0.296,0.044,0.790,0.702,0.341,0.958,1507\x0a597,M.\x20Roerslev,Brentford,23,0.687,0.129,0.030,0.080,0.050,0.191,0.078,1505\x0a598,B.\x20Osborn,Sheffield\x20United,28,0.888,0.728,0.752,0.123,0.094,0.219,0.328,1499\x0a599,E.\x20Bocat,Sint-Truiden,23,0.010,0.296,0.300,0.642,0.215,0.366,0.969,1498\x0a600,J.\x20Mosquera,Newell\x27s\x20Old\x20Boys,23,0.687,0.296,0.324,0.486,0.829,0.928,0.364,1496\x0a601,C.\x20Lykogiannis,Bologna,29,0.415,0.728,0.906,0.159,0.492,0.837,0.611,1492\x0a602,J.\x20Roussillon,Union\x20Berlin,30,0.687,0.608,0.272,0.042,0.025,0.059,0.108,1490\x0a603,M.\x20De\x20Sciglio,Juventus,30,0.852,0.026,0.808,0.052,0.667,0.435,0.195,1487\x0a604,R.\x20Aguilar,Monaco,30,0.059,0.381,0.916,0.443,0.060,0.396,0.646,1487\x0a605,A.\x20Koita,Sint-Truiden,24,0.845,0.728,0.095,0.309,0.294,0.372,0.995,1485\x0a606,G.\x20Bettini,Sarmiento,30,0.819,0.381,0.755,0.781,0.319,0.846,0.138,1485\x0a607,Bruno\x20Pacheco,Fortaleza,31,0.821,0.129,0.097,0.286,0.158,0.864,0.406,1484\x0a608,Nacho\x20Vidal,Osasuna,28,0.081,0.129,0.193,0.700,0.039,0.956,0.170,1479\x0a609,L.\x20Souto,Arsenal,24,0.034,0.381,0.437,0.619,0.909,0.688,0.706,1479\x0a610,M.\x20Fofana,Gent,18,0.446,0.775,0.010,0.054,0.977,0.034,0.987,1477\x0a611,D.\x20da\x20Costa,Mainz\x2005,29,0.531,0.217,0.812,0.125,0.969,0.969,0.650,1476\x0a612,Rubens,Atlético\x20Mineiro,21,0.439,0.466,0.206,0.999,0.949,0.150,0.067,1472\x0a613,J.\x20Doig,Hellas\x20Verona,21,0.825,0.466,0.115,0.155,0.662,0.150,0.802,1470\x0a614,S.\x20Janko,Bochum,27,0.055,0.026,0.140,0.890,0.781,0.274,0.349,1466\x0a615,M.\x20Phillips,WBA,32,0.388,0.905,0.035,0.110,0.495,0.029,0.807,1466\x0a616,M.\x20Diarra,Toulouse,22,0.971,0.129,0.193,0.252,0.191,0.658,0.349,1464\x0a617,E.\x20Meza,Colón,24,0.362,0.926,0.839,0.358,0.555,0.021,0.685,1463\x0a618,S.\x20Prieto,Tigre,30,0.958,0.296,0.770,0.713,0.821,0.119,0.145,1462\x0a619,Tomás\x20Silva,Vizela,23,0.465,0.540,0.651,0.880,0.040,0.846,0.362,1461\x0a620,Khellven,Athletico\x20Paranaense,22,0.525,0.678,0.099,0.450,0.236,0.866,0.211,1459\x0a621,N.\x20Mukiele,PSG,25,0.594,0.678,0.097,0.602,0.646,0.399,0.149,1450\x0a622,Matheus\x20Pereira,Vizela,22,0.620,0.296,0.890,0.667,0.226,0.202,0.394,1445\x0a623,R.\x20Delgado,Colón,33,0.749,0.381,0.956,0.966,0.449,0.911,0.014,1442\x0a624,N.\x20Morgantini,Platense,28,0.017,0.296,0.179,0.786,0.461,0.172,0.052,1440\x0a625,Maguinho,Goiás,31,0.020,0.064,0.103,0.531,0.159,0.458,0.508,1439\x0a626,J.\x20Wießmeier,Ried,30,0.298,0.466,0.021,0.059,0.653,0.336,0.014,1439\x0a627,O.\x20El\x20Hilali,Espanyol,19,0.649,0.466,0.679,0.649,0.997,0.969,0.591,1434\x0a628,Y.\x20Atal,Nice,27,0.561,0.808,0.543,0.826,0.922,0.490,0.988,1434\x0a629,Lucas\x20Rosa,Valladolid\x20Promesas,23,0.632,0.808,0.077,0.936,0.980,0.291,0.624,1434\x0a630,F.\x20Fabra,Boca\x20Juniors,32,0.965,0.540,0.901,0.226,0.995,0.658,0.706,1432\x0a631,Marlon,Cruzeiro,26,0.931,0.926,0.936,0.903,0.174,0.435,0.706,1431\x0a632,N.\x20Fadiga,Brest,23,0.632,0.001,0.157,0.719,0.180,0.775,0.896,1430\x0a633,B.\x20Milovanov,Arouca,25,0.016,0.001,0.445,0.983,0.573,0.731,0.101,1423\x0a634,R.\x20Vita,Fortuna\x20Sittard,22,0.758,0.296,0.072,0.339,0.227,0.274,0.450,1419\x0a635,J.\x20Justin,Leicester\x20City,25,0.957,0.129,0.188,0.777,0.982,0.561,0.253,1414\x0a636,Tiago\x20Araújo,Estoril,22,0.164,0.296,0.430,0.141,0.013,0.860,0.731,1413\x0a637,Luis\x20Pérez,Real\x20Valladolid,28,0.906,0.129,0.266,0.551,0.911,0.225,0.278,1413\x0a638,J.\x20Stanišić,Bayern\x20München,23,0.941,0.064,0.555,0.500,0.256,0.405,0.744,1411\x0a639,G.\x20Enrique,Gimnasia\x20La\x20Plata,23,0.298,0.678,0.339,0.920,0.862,0.992,0.718,1408\x0a640,M.\x20Bruno,Kortrijk,29,0.547,0.842,0.300,0.313,0.792,0.069,0.692,1406\x0a641,Paulo\x20Vitor,Rio\x20Ave,23,0.102,0.540,0.012,0.222,0.052,0.004,0.982,1400\x0a642,Carlos\x20Isaac,Albacete,25,0.774,0.941,0.453,0.440,0.902,0.722,0.326,1399\x0a643,S.\x20Thioub,Angers\x20SCO,28,0.893,0.961,0.275,0.116,0.208,0.038,0.747,1396\x0a644,Abdu\x20Conté,Troyes,25,0.136,0.728,0.482,0.198,0.339,0.599,0.580,1387\x0a645,A.\x20Bernabéi,Celtic,22,0.286,0.926,0.973,0.704,0.133,0.270,0.975,1387\x0a646,Toti,Wolverhampton,24,1.000,0.001,0.432,0.842,0.778,0.877,0.101,1386\x0a647,Renê,Internacional,30,0.039,0.217,0.997,0.856,0.883,0.871,0.901,1384\x0a648,CJ\x20Egan-Riley,Burnley,20,0.632,0.001,0.710,0.862,0.573,0.415,0.439,1378\x0a649,M.\x20Busi,Reims,23,0.813,0.129,0.646,0.739,0.337,0.599,0.650,1378\x0a650,J.\x20Piquerez,Palmeiras,24,0.178,0.466,0.140,0.542,0.817,0.804,0.362,1373\x0a651,O.\x20Drambaev,Zulte-Waregem,21,0.017,0.296,0.226,0.727,0.896,0.069,0.762,1370\x0a652,J.\x20Cáceres,Lanús,23,0.516,0.886,0.888,0.956,0.863,0.833,0.211,1369\x0a653,William,Cruzeiro,28,0.324,0.905,0.969,0.462,0.125,0.445,0.792,1366\x0a654,T.\x20Guidara,Vélez\x20Sarsfield,27,0.687,0.217,0.794,0.918,0.939,0.599,0.368,1357\x0a655,F.\x20Melegoni,Standard\x20Liège,24,0.854,0.678,0.226,0.646,0.262,0.492,0.725,1356\x0a656,C.\x20Borja,Sporting\x20Braga,30,0.732,0.775,0.695,0.680,0.901,0.396,0.725,1352\x0a657,B.\x20Bolingoli,Mechelen,27,0.257,0.001,0.856,0.896,0.678,0.430,0.491,1350\x0a658,S.\x20Marcich,Platense,25,0.413,0.296,0.420,0.939,0.913,0.775,0.221,1348\x0a659,Javi\x20Hernández,Girona,25,0.971,0.064,0.911,0.456,0.642,0.742,0.837,1347\x0a660,Sávio,Rio\x20Ave,28,0.813,0.808,0.957,0.222,0.589,0.225,0.731,1343\x0a661,F.\x20Oppegård,Go\x20Ahead\x20Eagles,20,0.098,0.129,0.084,0.326,0.525,0.691,0.871,1342\x0a662,T.\x20Ndicka,Oostende,23,0.205,0.864,0.063,0.197,0.403,0.154,0.338,1341\x0a663,O.\x20Turton,Huddersfield\x20Town,30,0.111,0.381,0.432,0.184,0.903,0.653,0.007,1336\x0a664,H.\x20ter\x20Avest,Utrecht,26,0.257,0.466,0.894,0.909,0.962,0.873,0.525,1336\x0a665,S.\x20McCallum,Norwich\x20City,22,0.257,0.064,0.930,0.992,0.304,0.941,0.258,1326\x0a666,Álex\x20Centelles,Almería,23,0.465,0.608,0.606,0.503,0.480,0.098,0.349,1321\x0a667,Josan,Elche,33,0.453,0.608,0.148,0.155,0.871,0.119,0.619,1321\x0a668,L.\x20Blondel,Tigre,26,0.761,0.217,0.731,0.962,0.185,0.911,0.285,1320\x0a669,R.\x20Sessegnon,Tottenham,23,0.056,0.864,0.406,0.193,0.047,0.405,0.430,1319\x0a670,Fágner,Corinthians,33,0.808,0.953,0.991,0.509,0.347,0.376,0.316,1316\x0a671,Patrick,Atlético\x20Mineiro,30,0.005,0.296,0.033,0.949,1.000,0.343,0.443,1305\x0a672,Marçal,Botafogo,34,0.738,0.864,0.555,0.663,0.311,0.950,0.010,1299\x0a673,E.\x20Insúa,Banfield,32,0.070,0.026,0.544,0.923,0.730,0.599,0.672,1295\x0a674,E.\x20Tchato,Montpellier,20,0.369,0.381,0.264,0.616,0.696,0.512,0.406,1294\x0a675,V.\x20Barco,Boca\x20Juniors,18,0.047,0.728,0.587,0.898,0.644,0.317,0.867,1293\x0a676,E.\x20Coronel,Banfield,26,0.325,0.129,0.854,0.966,0.990,0.967,0.646,1288\x0a677,Toni\x20Lato,Valencia,25,0.709,0.842,0.329,0.493,0.954,0.057,0.170,1286\x0a678,F.\x20Vera,Unión\x20Santa\x20Fe,25,0.136,0.001,0.664,0.802,0.804,0.986,0.684,1276\x0a679,Flávio\x20Nazinho,Sporting\x20CP,19,0.732,0.540,0.168,0.503,0.918,0.166,0.585,1272\x0a680,M.\x20Barcia,Independiente,22,0.402,0.775,0.013,0.700,0.298,0.219,0.685,1270\x0a681,R.\x20Tsouka,Zulte-Waregem,28,0.418,0.064,0.695,0.435,0.826,0.098,0.338,1269\x0a682,R.\x20D\x27Haese,Oostende,24,0.358,0.296,0.339,0.860,0.456,0.260,0.662,1266\x0a683,L.\x20Hjelde,Rotherham\x20United,19,0.465,0.064,0.235,0.670,0.080,0.599,0.014,1259\x0a684,B.\x20Aguirre,Lanús,22,0.709,0.026,0.466,0.684,0.937,0.215,0.349,1258\x0a685,D.\x20Kasius,Rapid\x20Wien,20,0.505,0.978,0.927,0.537,0.611,0.242,0.911,1252\x0a686,H.\x20Toffolo,Nottingham\x20Forest,27,0.189,0.678,0.167,0.483,0.466,0.405,0.057,1250\x0a687,Mariano,Atlético\x20Mineiro,36,0.060,0.217,0.992,0.167,0.277,0.154,0.183,1250\x0a688,M.\x20Peinipil,Barracas\x20Central,24,0.031,0.381,0.717,0.371,0.988,0.573,0.443,1240\x0a689,W.\x20Zaire-Emery,PSG,17,0.902,0.381,0.004,0.392,0.386,0.111,0.819,1240\x0a690,Wilson\x20Manafá,Porto,28,0.864,0.678,0.734,0.725,0.725,0.977,0.679,1238\x0a691,J.\x20Díaz,Barracas\x20Central,25,0.783,0.129,0.544,0.945,0.875,0.935,0.084,1238\x0a692,L.\x20van\x20Gelderen,Groningen,22,0.783,0.296,0.192,0.903,0.236,0.937,0.513,1235\x0a693,J.\x20Rodríguez,Vasco\x20da\x20Gama,26,0.510,0.728,0.766,0.516,0.653,0.846,0.287,1234\x0a694,T.\x20Lamptey,Brighton,22,0.390,0.064,0.115,0.082,0.356,0.021,0.945,1232\x0a695,Lucas\x20Piton,Vasco\x20da\x20Gama,22,0.854,0.608,0.629,0.112,0.826,0.145,0.125,1229\x0a696,Caio\x20Paulista,São\x20Paulo,25,0.358,0.129,0.446,0.089,0.116,0.877,0.991,1229\x0a697,L.\x20Esquivel,Unión\x20Santa\x20Fe,21,0.325,0.728,0.911,0.845,0.808,0.745,0.685,1227\x0a698,Marlon,América\x20Mineiro,29,0.217,0.608,0.191,0.954,0.657,0.756,0.966,1220\x0a699,Wesley,Flamengo,19,0.217,0.608,0.061,0.349,0.085,0.544,0.539,1218\x0a700,M.\x20Doherty,Atlético\x20Madrid,31,0.090,0.064,0.142,0.258,0.211,0.971,0.456,1218\x0a701,Reinaldo,Grêmio,33,0.228,0.886,0.774,0.466,0.954,0.392,0.264,1214\x0a702,Pedrinho,Athletico\x20Paranaense,20,0.111,0.026,0.591,0.479,0.336,0.860,0.162,1213\x0a703,S.\x20Byram,Norwich\x20City,29,0.197,0.001,0.855,0.872,0.074,0.923,0.731,1209\x0a704,M.\x20Pašalić,Borussia\x20Dortmund,22,0.005,0.296,0.352,0.228,0.117,0.435,0.944,1208\x0a705,Xavi\x20Quintillà,Santa\x20Clara,26,0.632,0.775,0.770,0.106,0.824,0.492,0.243,1198\x0a706,N.\x20Dyhr,Kortrijk,21,0.958,0.296,0.559,0.047,0.480,0.599,0.089,1196\x0a707,Gabriel\x20Inocêncio,Santos,28,0.343,0.129,0.360,0.748,0.303,0.950,0.864,1188\x0a708,N.\x20Breitenbruch,Arsenal,27,0.178,0.026,0.863,0.760,0.713,0.877,0.021,1182\x0a709,Natanael,Coritiba,21,0.333,0.217,0.171,0.986,0.569,0.090,0.394,1181\x0a710,S.\x20Dest,Milan,22,0.358,0.808,0.319,0.095,0.504,0.492,0.958,1174\x0a711,S.\x20Bakari,RKC\x20Waalwijk,28,0.369,0.540,0.349,0.809,0.777,0.013,0.876,1158\x0a712,M.\x20Djénépo,Southampton,24,0.992,0.466,0.016,0.585,0.433,0.012,0.798,1157\x0a713,G.\x20Compagnucci,Belgrano,31,0.645,0.775,0.279,0.078,0.633,0.162,0.287,1157\x0a714,J.\x20Uronen,Schalke\x2004,28,0.931,0.540,0.510,0.495,0.867,0.454,0.074,1156\x0a715,J.\x20Barrett\x20Laursen,Standard\x20Liège,28,0.004,0.001,0.396,0.117,0.200,0.599,0.544,1150\x0a716,Hugo\x20Novoa,Basel,20,0.465,0.905,0.093,0.070,0.044,0.065,0.824,1150\x0a717,L.\x20Hall,Chelsea,18,0.749,0.926,0.568,0.708,0.615,0.691,0.287,1150\x0a718,E.\x20Más,Estudiantes,34,0.988,0.217,0.657,0.302,0.992,0.854,0.262,1148\x0a719,Matheus\x20Alexandre,Cuiabá,24,0.825,0.129,0.700,0.846,0.778,0.487,0.230,1143\x0a720,Zé\x20Carlos,Vitória\x20Guimarães,21,0.030,0.217,0.086,0.611,0.248,0.119,0.303,1141\x0a721,T.\x20Ouwejan,Schalke\x2004,26,0.744,0.905,0.789,0.595,0.926,0.069,0.295,1141\x0a722,T.\x20Delaine,Strasbourg,31,0.209,0.905,0.249,0.064,0.108,0.599,0.807,1138\x0a723,Y.\x20Baas,Ajax,20,0.000,0.064,0.909,0.923,0.786,0.202,0.611,1131\x0a724,D.\x20Leidner,Austria\x20Wien,21,0.632,0.381,0.598,0.448,0.437,0.469,0.965,1130\x0a725,Diogo\x20Calila,Santa\x20Clara,24,0.402,0.026,0.154,0.591,0.627,0.329,0.692,1127\x0a726,B.\x20Barros\x20Schelotto,Gimnasia\x20La\x20Plata,23,0.521,0.129,0.416,0.302,0.608,0.568,0.117,1126\x0a727,K.\x20Stafylidis,Bochum,29,0.749,0.381,0.196,0.715,0.193,0.200,0.155,1125\x0a728,G.\x20Luján,San\x20Lorenzo,22,0.966,0.678,0.642,0.380,0.507,0.960,0.078,1124\x0a729,Guga,Fluminense,24,0.749,0.381,0.222,0.068,0.026,0.691,0.527,1124\x0a730,D.\x20Yongwa,Lorient,22,0.547,0.728,0.091,0.576,0.786,0.035,0.863,1123\x0a731,Paulinho,Marítimo,31,0.783,0.728,0.125,0.133,0.436,0.423,0.349,1117\x0a732,Héctor\x20Bellerín,Sporting\x20CP,28,0.343,0.775,0.482,0.555,0.774,0.672,0.738,1114\x0a733,Nathan,Santos,21,0.067,0.466,0.129,0.883,0.725,0.822,0.403,1112\x0a734,Rubén\x20Sánchez,Espanyol,22,0.029,0.678,0.027,0.928,0.658,0.986,0.738,1112\x0a735,L.\x20Pellegrini,Lazio,24,0.343,0.381,0.915,0.809,0.286,0.349,0.629,1107\x0a736,J.\x20Barinaga,Belgrano,22,0.687,0.728,0.657,0.871,0.555,0.069,0.591,1105\x0a737,Mayke,Palmeiras,30,0.962,0.129,0.885,0.183,0.286,0.521,0.211,1096\x0a738,G.\x20Quagliata,Cremonese,23,0.582,0.864,0.561,0.167,0.009,0.052,0.777,1092\x0a739,S.\x20Ingolitsch,Sturm\x20Graz,26,0.077,0.064,0.975,0.739,0.645,0.999,0.560,1085\x0a740,R.\x20Ogawa,Vitória\x20Guimarães,26,0.257,0.728,0.657,0.272,0.416,0.986,0.129,1084\x0a741,O.\x20Aina,Torino,26,0.892,0.808,0.587,0.236,0.005,0.894,0.952,1083\x0a742,B.\x20Godfrey,Everton,25,0.465,0.026,0.183,0.653,0.000,0.866,0.089,1082\x0a743,L.\x20Torres,Rodez,22,0.441,0.129,0.487,0.948,0.162,0.349,0.372,1077\x0a744,R.\x20Karsdorp,Roma,28,0.090,0.608,0.315,0.023,0.943,1.000,0.093,1072\x0a745,P.\x20Ghiglione,Cremonese,26,0.911,0.608,0.606,0.343,0.018,0.104,0.133,1071\x0a746,D.\x20Gosling,Watford,33,0.879,0.026,0.636,0.542,0.920,0.332,0.038,1063\x0a747,M.\x20Aydin,Schalke\x2004,21,0.410,0.775,0.555,0.936,0.799,0.465,0.624,1062\x0a748,R.\x20Carstensen,Genk,22,0.764,0.905,0.910,0.973,0.188,0.474,0.886,1062\x0a749,D.\x20Dankerlui,Groningen,26,0.060,0.678,0.684,0.909,0.799,0.790,0.573,1060\x0a750,T.\x20Mohr,Schalke\x2004,27,0.854,0.966,0.949,0.427,0.598,0.225,0.585,1059\x0a751,Lucas\x20Pires,Santos,22,0.257,0.129,0.516,0.836,0.883,0.191,0.389,1058\x0a752,R.\x20Saravia,Atlético\x20Mineiro,29,0.557,0.001,0.664,0.653,0.542,0.260,0.338,1055\x0a753,R.\x20Pierre-Gabriel,Espanyol,24,0.336,0.381,0.261,0.769,0.662,0.691,0.496,1052\x0a754,Sergio\x20Gómez,Man\x20City,22,0.111,0.775,0.551,0.040,0.695,0.119,0.715,1051\x0a755,G.\x20Gudmundsson,Lille,24,0.922,0.886,0.048,0.446,0.789,0.930,0.930,1051\x0a756,M.\x20De\x20Wit,AZ,25,0.971,0.217,0.299,0.790,0.667,0.457,0.235,1048\x0a757,J.\x20Hurtado,Red\x20Bull\x20Bragantino,21,0.764,0.864,0.593,0.559,0.918,0.599,0.597,1045\x0a758,A.\x20Meli,Godoy\x20Cruz,22,0.022,0.001,0.595,0.984,0.206,0.599,0.145,1044\x0a759,T.\x20Rothe,Borussia\x20Dortmund,18,0.101,0.217,0.937,0.996,0.099,0.295,0.813,1043\x0a760,Jamerson,Coritiba,24,0.001,0.001,0.151,0.422,0.825,0.179,0.646,1041\x0a761,J.\x20Scherzer,Wolfsberger\x20AC,27,0.687,0.864,0.603,0.227,0.115,0.997,0.556,1035\x0a762,C.\x20Dagba,Strasbourg,24,0.901,0.064,0.240,0.764,0.534,0.021,0.611,1029\x0a763,Fábio\x20Santos,Corinthians,37,0.022,0.001,0.710,0.322,0.016,0.542,0.149,1029\x0a764,G.\x20Pezzella,Lecce,25,0.439,0.129,0.705,0.242,0.003,0.833,0.802,1023\x0a765,Rafinha,São\x20Paulo,37,0.999,0.296,0.999,0.104,0.319,0.993,0.195,1020\x0a766,Mateusinho,Cuiabá,24,0.620,0.217,0.705,0.726,0.347,0.996,0.117,1013\x0a767,M.\x20Akanji,Man\x20City,27,0.005,0.129,0.582,0.099,0.608,0.572,0.580,4693\x0a768,Average,Club,26,0.503,0.611,0.532,0.493,0.470,0.454,0.560,2352';function calculateEuclideanDifference(_0x2d4bcc,_0x58c051){const _0x3774c9=_0x4c9a;let _0xc371ed=0x0;for(let _0x5a683c=0x4;_0x5a683c<=0xa;_0x5a683c++){const _0x2d34b5=parseFloat(_0x2d4bcc[_0x5a683c]),_0x19417d=parseFloat(_0x58c051[_0x5a683c]);_0xc371ed+=Math[_0x3774c9(0x1b7)](_0x2d34b5-_0x19417d,0x2);}return Math[_0x3774c9(0x21b)](_0xc371ed);}const dataArray=csvData[_0x2cfa9d(0x1bd)]('\x0a')['map'](_0x932cb3=>_0x932cb3[_0x2cfa9d(0x1bd)](',')),colorClasses=[_0x2cfa9d(0x22e),_0x2cfa9d(0x1da),'result-color-orange',_0x2cfa9d(0x23f),_0x2cfa9d(0x1df),'result-color-rose','result-color-1',_0x2cfa9d(0x221),_0x2cfa9d(0x232),_0x2cfa9d(0x1c3),'result-color-5','result-color-6','result-color-7',_0x2cfa9d(0x204),_0x2cfa9d(0x20f),_0x2cfa9d(0x1d8),'result-color-11',_0x2cfa9d(0x20c),_0x2cfa9d(0x220),_0x2cfa9d(0x224),_0x2cfa9d(0x222),_0x2cfa9d(0x223),_0x2cfa9d(0x23a),_0x2cfa9d(0x225),'result-color-19','result-color-20',_0x2cfa9d(0x246),'result-color-22',_0x2cfa9d(0x248),_0x2cfa9d(0x203),_0x2cfa9d(0x21f),_0x2cfa9d(0x1f7),'result-color-27',_0x2cfa9d(0x21a),_0x2cfa9d(0x1f5),_0x2cfa9d(0x1f2),'result-color-31',_0x2cfa9d(0x239),_0x2cfa9d(0x1c9),_0x2cfa9d(0x1d6),'result-color-35','result-color-36',_0x2cfa9d(0x1fb),_0x2cfa9d(0x20b),'result-color-39',_0x2cfa9d(0x20d),_0x2cfa9d(0x1ca),_0x2cfa9d(0x208),'result-color-43','result-color-44','result-color-45',_0x2cfa9d(0x1ff),'result-color-47','result-color-48'];let searchResults=[];function removeSpecialChars(_0x12e39d){const _0x1c8511=_0x2cfa9d;return _0x12e39d['normalize']('NFD')[_0x1c8511(0x244)](/[\u0300-\u036f\s]/g,'');}function search(_0x582978){const _0x3216ae=_0x2cfa9d,_0x1d02ef=dataArray[_0x3216ae(0x22a)](_0x551080=>removeSpecialChars(_0x551080[0x1]['toLowerCase']())[_0x3216ae(0x1fd)](removeSpecialChars(_0x582978[_0x3216ae(0x23c)]())));return _0x1d02ef;}function createTable(_0x45e632,_0xc4f409,_0x230b26){const _0x51677e=_0x2cfa9d,_0x234754=document[_0x51677e(0x209)](_0x51677e(0x247)),_0x7551fc=['',_0x51677e(0x1d1),'',_0x51677e(0x1ef),'Cross%',_0x51677e(0x240),_0x51677e(0x1fe),_0x51677e(0x1ea),_0x51677e(0x1ec),'Aerial%',_0x51677e(0x243),_0x51677e(0x1e1),''],_0x1a1706=_0x234754[_0x51677e(0x1d2)]('th')!==null,_0x2f61ae=_0x1a1706?_0x234754['querySelector'](_0x51677e(0x227)):document[_0x51677e(0x238)](_0x51677e(0x227));_0x2f61ae[_0x51677e(0x20e)][_0x51677e(0x215)](_0x51677e(0x242));if(!_0x1a1706){const _0x4735f6=document['createElement']('tr');for(let _0x15891e=0x1;_0x15891e<_0x7551fc['length'];_0x15891e++){const _0x5992a0=document[_0x51677e(0x238)]('th');_0x5992a0[_0x51677e(0x1b6)]=_0x7551fc[_0x15891e],_0x4735f6['appendChild'](_0x5992a0);}const _0x2cf248=document[_0x51677e(0x238)]('th');_0x2cf248[_0x51677e(0x1b6)]='',_0x4735f6[_0x51677e(0x1ba)](_0x2cf248),_0x2f61ae[_0x51677e(0x1ba)](_0x4735f6);}const _0x7aca72=dataArray[_0xc4f409],_0x3ab871=document[_0x51677e(0x238)]('tr');for(let _0x296619=0x1;_0x296619<_0x7aca72[_0x51677e(0x231)];_0x296619++){const _0x15310c=document[_0x51677e(0x238)]('td');if(_0x296619>=0x4&&_0x296619<=0xa){const _0x2f7f34=parseFloat(_0x7aca72[_0x296619])*0x64;_0x15310c[_0x51677e(0x1b6)]=_0x2f7f34['toFixed'](0x1);}else _0x15310c[_0x51677e(0x1b6)]=_0x7aca72[_0x296619];_0x15310c[_0x51677e(0x20e)][_0x51677e(0x215)](_0x230b26),_0x3ab871[_0x51677e(0x1ba)](_0x15310c);}const _0x2aa0f1=document[_0x51677e(0x238)]('td'),_0xf1216e=document[_0x51677e(0x238)](_0x51677e(0x1c0));_0xf1216e[_0x51677e(0x1b6)]='x',_0xf1216e['addEventListener'](_0x51677e(0x1d3),function(){const _0x54178f=_0x51677e;_0x3ab871['remove']();const _0x4e960f=document[_0x54178f(0x1cb)](_0x54178f(0x219)+_0x230b26),_0x74bf4f=document[_0x54178f(0x1cb)](_0x54178f(0x212)+_0x230b26),_0x19a435=document[_0x54178f(0x1cb)](_0x54178f(0x1e3)+_0x230b26);_0x4e960f[_0x54178f(0x1c1)](_0x21a1d1=>_0x21a1d1[_0x54178f(0x1eb)]()),_0x74bf4f['forEach'](_0x59f6ba=>_0x59f6ba[_0x54178f(0x1eb)]()),_0x19a435[_0x54178f(0x1c1)](_0x42fdec=>_0x42fdec[_0x54178f(0x1eb)]());}),_0x2aa0f1['appendChild'](_0xf1216e),_0x3ab871['appendChild'](_0x2aa0f1),_0x2f61ae[_0x51677e(0x1ba)](_0x3ab871);!_0x1a1706&&_0x234754[_0x51677e(0x1ba)](_0x2f61ae);const _0x5dd2a4=dataArray[_0xc4f409][_0x51677e(0x1cf)](',\x20');console['log'](_0x5dd2a4);const _0x33c4fb=0xbe,_0x133523=[0x0,0x0],_0xca0060=[0x0,0x2*Math['PI']/0x7,0x4*Math['PI']/0x7,0x6*Math['PI']/0x7,0x8*Math['PI']/0x7,0xa*Math['PI']/0x7,0xc*Math['PI']/0x7];function _0x1e8a7f(_0x1d57f9,_0x629c7){const _0x2a941d=_0x51677e;let _0x395e48=_0xca0060[_0x1d57f9-0x1];_0x395e48+=0x2*Math['PI']/0x7*0.2;const _0x1b91e6=0xbe*_0x629c7*Math[_0x2a941d(0x229)](_0x395e48),_0xd2d6ff=0xbe*_0x629c7*Math['sin'](_0x395e48);return{'x':_0x1b91e6,'y':_0xd2d6ff};}const _0x592d20=document[_0x51677e(0x1d2)]('.radar'),_0x1125c0=_0x592d20[_0x51677e(0x1ba)](document[_0x51677e(0x201)](_0x51677e(0x200),'g'));_0x1125c0['setAttribute']('transform',_0x51677e(0x1e2)),_0x1125c0[_0x51677e(0x237)]='';const _0x1a41c5=[],_0x284cb0=_0x5dd2a4['split'](',');for(let _0x2b6f66=0x4;_0x2b6f66<0xb;_0x2b6f66++){_0x1a41c5[_0x51677e(0x22d)]({'axis':_0x2b6f66-0x3,'value':parseFloat(_0x284cb0[_0x2b6f66])});}const _0x557ea2=_0x1a41c5[_0x51677e(0x1c7)](({axis:_0x15305d,value:_0xf621a6})=>{const {x:_0x4d0244,y:_0x16616c}=_0x1e8a7f(_0x15305d,_0xf621a6);return _0x4d0244+','+_0x16616c;})['join']('\x20'),_0x3c4c29=document[_0x51677e(0x201)]('http://www.w3.org/2000/svg',_0x51677e(0x1f4));_0x3c4c29[_0x51677e(0x1c5)](_0x51677e(0x21d),'radarLines\x20'+_0x230b26),_0x3c4c29['setAttribute'](_0x51677e(0x1e7),_0x557ea2+'\x20'+_0x557ea2[_0x51677e(0x1bd)]('\x20')[0x0]),_0x3c4c29['setAttribute']('stroke-width','3'),_0x3c4c29[_0x51677e(0x1c5)]('fill',_0x51677e(0x205)),_0x1125c0[_0x51677e(0x1ba)](_0x3c4c29);const _0x29a855=document[_0x51677e(0x201)](_0x51677e(0x200),_0x51677e(0x1f0));_0x29a855[_0x51677e(0x1c5)](_0x51677e(0x21d),_0x51677e(0x1cd)+_0x230b26),_0x29a855[_0x51677e(0x1c5)](_0x51677e(0x1e7),_0x557ea2),_0x29a855['style']['fillOpacity']=_0x51677e(0x234),_0x1125c0[_0x51677e(0x1ba)](_0x29a855),_0x1a41c5['forEach'](({axis:_0x5e5634,value:_0x5a410b})=>{const _0x4f77a8=_0x51677e,{x:_0x5d0460,y:_0x368a5b}=_0x1e8a7f(_0x5e5634,_0x5a410b),_0xf8f127=document['createElementNS'](_0x4f77a8(0x200),'circle');_0xf8f127[_0x4f77a8(0x1c5)]('class','radarCircle\x20'+_0x230b26),_0xf8f127[_0x4f77a8(0x1c6)][_0x4f77a8(0x21e)]=_0x4f77a8(0x1be),_0xf8f127[_0x4f77a8(0x1c5)]('r',_0x4f77a8(0x1cc)),_0xf8f127['setAttribute']('cx',_0x5d0460),_0xf8f127[_0x4f77a8(0x1c5)]('cy',_0x368a5b),_0x1125c0[_0x4f77a8(0x1ba)](_0xf8f127);});}function toggleFilling(){const _0x5affa6=_0x2cfa9d,_0x2b15da=document[_0x5affa6(0x1cb)](_0x5affa6(0x1f3));_0x2b15da['forEach'](_0x403fd6=>{const _0xfcc450=_0x5affa6;_0x403fd6[_0xfcc450(0x1c6)][_0xfcc450(0x211)]=_0x403fd6[_0xfcc450(0x1c6)]['fill']?'':_0xfcc450(0x205);});}function _0x3d82(){const _0x33a70f=['length','result-color-3','fillStyle','0.2','src','true','innerHTML','createElement','result-color-32','result-color-17','body','toLowerCase','Arial,\x20sans-serif','fontFamily','result-color-green','Expected\x20assists','image/png','metrics-table','Progressive\x20carries','replace','font','result-color-21','resultsTable','result-color-23','textContent','pow','parent-container','fontSize','appendChild','index','99uoGnAL','split','0.86','2157418ctrpru','button','forEach','1mPEgwG','result-color-4','495400IxVylr','setAttribute','style','map','getContext','result-color-33','result-color-41','querySelectorAll','6.49','radarPolygon\x20','804472igIDHE','join','fillRect','Percentiles','querySelector','click','similarPlayersContainer','datamb.football','result-color-34','listStyleType','result-color-10','98538OujVeB','result-color-pink','removeChild','toBlob','canvas','paddingLeft','result-color-bleu','12px\x20Arial','Minutes\x20played','translate(231.77,225.77)','.radarCircle.','difference','10.8px','darkMode','points','href','searchInput1','Defensive\x20actions','remove','Defensive\x20duel%','435rCyZrm','fillText','Age','polygon','addEventListener','result-color-30','.radarPolygon','polyline','result-color-29','left','result-color-26','firstChild','3140900mHcGnC','matches','result-color-37','onload','includes','Progressive\x20passes','result-color-46','http://www.w3.org/2000/svg','createElementNS','width','result-color-24','result-color-8','none','download','value','result-color-42','getElementById','#ffffff','result-color-38','result-color-12','result-color-40','classList','result-color-9','createObjectURL','fill','.radarLines.','getItem','1932780YkHvua','add','#000000','Similar\x20data\x20to\x20',')\x20-\x20','.radarPolygon.','result-color-28','sqrt','9px','class','fillOpacity','result-color-25','result-color-13','result-color-2','result-color-15','result-color-16','result-color-14','result-color-18','then','table','height','cos','filter','2051952Bnxgzq','grey','push','result-color-blue','screenshot.png','165BTacBQ'];_0x3d82=function(){return _0x33a70f;};return _0x3d82();}const teamNames=new Set();function createTableForTeam1(){const _0x9ad6c8=_0x2cfa9d,_0x3b2264=document[_0x9ad6c8(0x209)](_0x9ad6c8(0x1e9)),_0x304a68=document[_0x9ad6c8(0x209)]('searchButton1'),_0x22ab13=document[_0x9ad6c8(0x209)]('resultsTable'),_0x4f27fa=document[_0x9ad6c8(0x238)]('ul');_0x4f27fa[_0x9ad6c8(0x1c6)][_0x9ad6c8(0x23e)]=_0x9ad6c8(0x23d),_0x4f27fa[_0x9ad6c8(0x1c6)][_0x9ad6c8(0x1d7)]='none',_0x4f27fa['style'][_0x9ad6c8(0x1de)]=_0x9ad6c8(0x21c),_0x22ab13[_0x9ad6c8(0x1ba)](_0x4f27fa);let _0x2eaff5=0x0;_0x304a68[_0x9ad6c8(0x1f1)]('click',function(){const _0x2e9f2e=_0x9ad6c8,_0x271e9a=_0x3b2264[_0x2e9f2e(0x207)],_0x19c05c=search(_0x271e9a),_0x2fc8c9=document['querySelectorAll'](_0x2e9f2e(0x1f3));_0x2fc8c9[_0x2e9f2e(0x1c1)](_0x264b93=>{const _0x2e252d=_0x2e9f2e;_0x264b93[_0x2e252d(0x1c6)][_0x2e252d(0x211)]='';});if(_0x19c05c){const _0x4d4303=parseInt(_0x19c05c[0x0]),_0x58d5b6=_0x19c05c[0x1]+'\x20('+_0x19c05c[0x2]+',\x20'+_0x19c05c[0x3]+_0x2e9f2e(0x218)+_0x19c05c[0xb]+'\x20min',_0x2373cf=colorClasses[_0x2eaff5%colorClasses[_0x2e9f2e(0x231)]];createTable(_0x58d5b6,_0x4d4303-0x1,_0x2373cf),_0x2eaff5++;}});}createTableForTeam1();const similarPlayersContainer=document['createElement']('div');similarPlayersContainer['id']=_0x2cfa9d(0x1d4),similarPlayersContainer[_0x2cfa9d(0x1c6)]['position']='absolute',similarPlayersContainer[_0x2cfa9d(0x1c6)]['top']='733px',similarPlayersContainer['style'][_0x2cfa9d(0x1f6)]='210px',document[_0x2cfa9d(0x23b)][_0x2cfa9d(0x1ba)](similarPlayersContainer);let colorIndex=0x0;searchButton1['addEventListener'](_0x2cfa9d(0x1d3),function(){const _0x387ee9=_0x2cfa9d,_0xb308ae=searchInput[_0x387ee9(0x207)],_0x4320d0=search(_0xb308ae);if(_0x4320d0['length']>0x0){const _0xf8bf8c=_0x4320d0[0x0],_0xb282fa=parseInt(_0xf8bf8c[0x0])-0x1,_0x54d5ef=[];for(let _0x5a22e8=0x0;_0x5a22e8<dataArray['length'];_0x5a22e8++){if(_0x5a22e8!==_0xb282fa){const _0x41e233=calculateEuclideanDifference(_0xf8bf8c,dataArray[_0x5a22e8]);_0x54d5ef['push']({'index':_0x5a22e8,'difference':_0x41e233});}}_0x54d5ef['sort']((_0x120017,_0x1466b2)=>_0x120017['difference']-_0x1466b2[_0x387ee9(0x1e4)]);const _0x27b5e3=_0x54d5ef['slice'](0x0,0x5);for(let _0xe60575=0x0;_0xe60575<0x1;_0xe60575++){const _0xe0e843=_0x27b5e3[_0xe60575][_0x387ee9(0x1bb)],_0x40d121=dataArray[_0xe0e843][0x1],_0x34c606=dataArray[_0xe0e843][0x3],_0x5a6f36=dataArray[_0xe0e843][0x2],_0x2dba7c=document['createElement'](_0x387ee9(0x227));_0x2dba7c['classList'][_0x387ee9(0x215)](_0x387ee9(0x242));const _0x2d724e=document[_0x387ee9(0x238)]('tr'),_0x51d1a9=document['createElement']('th');_0x51d1a9[_0x387ee9(0x1c5)]('colspan','5'),_0x51d1a9[_0x387ee9(0x1b6)]=_0x387ee9(0x217)+_0x4320d0[0x0][0x1],_0x51d1a9[_0x387ee9(0x20e)][_0x387ee9(0x215)](colorClasses[colorIndex%colorClasses['length']]),_0x2d724e[_0x387ee9(0x1ba)](_0x51d1a9),_0x2dba7c[_0x387ee9(0x1ba)](_0x2d724e);const _0x51aee1=document[_0x387ee9(0x238)]('tr');for(let _0x4bf51c=0x0;_0x4bf51c<_0x27b5e3[_0x387ee9(0x231)];_0x4bf51c++){const _0x4ced76=_0x27b5e3[_0x4bf51c][_0x387ee9(0x1bb)],_0x5100e7=dataArray[_0x4ced76][0x1],_0x219208=dataArray[_0x4ced76][0x3],_0xa67b21=dataArray[_0x4ced76][0x2],_0x3199b5=document[_0x387ee9(0x238)]('td');_0x3199b5['textContent']=''+_0x5100e7,_0x3199b5[_0x387ee9(0x1c6)][_0x387ee9(0x1b9)]=_0x387ee9(0x1e5),_0x3199b5[_0x387ee9(0x1c6)]['cursor']='pointer',_0x3199b5[_0x387ee9(0x1f1)]('click',function(){const _0x4e1c9a=_0x387ee9;searchInput[_0x4e1c9a(0x207)]=_0x5100e7,searchButton1['click']();}),_0x51aee1[_0x387ee9(0x1ba)](_0x3199b5);}similarPlayersContainer['children'][_0x387ee9(0x231)]>0x0&&similarPlayersContainer[_0x387ee9(0x1db)](similarPlayersContainer[_0x387ee9(0x1f8)]),_0x2dba7c[_0x387ee9(0x1ba)](_0x51aee1),similarPlayersContainer[_0x387ee9(0x1ba)](_0x2dba7c),colorIndex++;}}searchInput['value']='',updateMatchingNames();});
+  </script>
+
+
+</div>
+</body>
+</html>
